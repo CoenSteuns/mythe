@@ -17,7 +17,7 @@ public class PlayerMovement : Movement
             return;
         }
         print("asdas");
-        _maxSpeed *= _sprintSpeedMultyplier;
+        //_maxSpeed *= _sprintSpeedMultyplier;
         _isSprinting = true;
     }
 
@@ -32,9 +32,10 @@ public class PlayerMovement : Movement
         {
             return;
         }
-        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        print("Hori: " + Input.GetAxisRaw("Horizontal") + " Verti" + Input.GetAxis("Vertical"));
+        if (Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0)
         {
-            _maxSpeed /= _sprintSpeedMultyplier;
+            //_maxSpeed /= _sprintSpeedMultyplier;
             _isSprinting = false;
         }
     }

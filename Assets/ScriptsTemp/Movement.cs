@@ -7,8 +7,8 @@ using System.Collections;
 public class Movement : MonoBehaviour
 {
 
-    [SerializeField][Range(10, 20)] protected float _acceleration = 15.0f;
-    [SerializeField][Range(1,15)] protected float _maxSpeed = 2;
+    [SerializeField] protected float _acceleration = 15.0f;
+    [SerializeField] protected float _maxSpeed = 2;
     protected bool _canMove = true;
     private Rigidbody rigidbody;
 
@@ -30,8 +30,18 @@ public class Movement : MonoBehaviour
             return;
         }
         Vector3 InputVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        CheckForMacVelocity();
-        rigidbody.AddForce(InputVelocity * _acceleration / Time.fixedDeltaTime, ForceMode.Force);
+        InputVelocity = transform.TransformDirection(InputVelocity);
+        InputVelocity *= _acceleration;
+
+        Vector3 velocity = rigidbody.velocity;
+        Vector3 velocityChange = (InputVelocity - velocity);
+        velocityChange = new Vector3(
+                Mathf.Clamp(velocityChange.x, -_maxSpeed, _maxSpeed),
+                0,
+                velocityChange.z = Mathf.Clamp(velocityChange.z, -_maxSpeed, _maxSpeed)
+            );
+        rigidbody.AddForce(velocityChange, ForceMode.VelocityChange);
+
     }
 
     private void CheckForMacVelocity()
@@ -43,6 +53,7 @@ public class Movement : MonoBehaviour
 
         rigidbody.velocity = rigidbody.velocity.normalized;
         rigidbody.velocity *= _maxSpeed;
+        print(rigidbody.velocity.magnitude);
     }
 
 }
