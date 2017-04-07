@@ -12,6 +12,8 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private float _timer;
 
+    private bool _KeyUp;
+
     [SerializeField] private float _maxJump = 800;
   //private  Vector3 _v = new Vector3(0,-5,0);
 
@@ -35,6 +37,7 @@ public class Jump : MonoBehaviour
             if (hit.collider.tag == "Ground")
             {
                 _grounded = true;
+
             }
             else
             {
@@ -50,8 +53,9 @@ public class Jump : MonoBehaviour
             _jumpStrenght = _maxJump;
         }
 
-        if (Input.GetKey("space"))
+        if (Input.GetAxisRaw("Jump")==1)
         {
+            _KeyUp = true;
                 _timer++;
             if (_timer > 100)
             {
@@ -59,10 +63,12 @@ public class Jump : MonoBehaviour
 
             }
         }
-        if (Input.GetKeyUp("space") && _grounded)
+        if (Input.GetAxisRaw("Jump")==0 && _grounded && _KeyUp)
         {
+            print("gek");
             Jumper();
             _timer = 0;
+            _KeyUp = false;
         }
 
     }
