@@ -32,7 +32,7 @@ public class Jump : MonoBehaviour
         Vector3 downRay = transform.TransformDirection(Vector3.down);
         Debug.DrawRay(transform.position, downRay, Color.black);
 
-        if (Physics.Raycast(transform.position, downRay, out hit, 1))
+        if (Physics.Raycast(transform.position, downRay, out hit, 8))
         {
             if (hit.collider.tag == "Ground")
             {
@@ -75,8 +75,8 @@ public class Jump : MonoBehaviour
 
     private void Jumper()
     {
-        _rb.AddForce(0, _jumpStrenght, 0);
-        _jumpStrenght = 400;
+        _rb.AddForce(0, _jumpStrenght, 0, ForceMode.VelocityChange);
+        _jumpStrenght = 5;
     }
 
 
