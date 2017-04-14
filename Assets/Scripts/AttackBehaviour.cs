@@ -7,6 +7,7 @@ public class AttackBehaviour : MonoBehaviour
 {
 
     private Animator _ani;
+    private bool _isAttacking = false;
 
     [SerializeField] private AnimationClip AttackAni;
 	// Use this for initialization
@@ -17,9 +18,10 @@ public class AttackBehaviour : MonoBehaviour
 	
 	// Update is called once per frame
     private void Update () {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetAxisRaw("Attack") == 1  && _isAttacking == false)
         {
             _ani.SetBool("Attack",true);
+            _isAttacking = true;
             StartCoroutine(AttackTimer());
 
         }
@@ -30,6 +32,7 @@ public class AttackBehaviour : MonoBehaviour
     IEnumerator AttackTimer()
     {
         yield return new WaitForSeconds(AttackAni.length);
+        _isAttacking = false;
         _ani.SetBool("Attack", false);
     }
 }
