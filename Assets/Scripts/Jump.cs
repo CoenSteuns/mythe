@@ -11,6 +11,8 @@ public class Jump : MonoBehaviour
     private Rigidbody _rb;
     [SerializeField]
     private float _timer;
+	[SerializeField]
+	private float _minJumpStr;
 
     private bool _KeyUp;
 
@@ -76,7 +78,7 @@ public class Jump : MonoBehaviour
     private void Jumper()
     {
         _rb.AddForce(0, _jumpStrenght, 0, ForceMode.VelocityChange);
-        _jumpStrenght = 5;
+		_jumpStrenght = _minJumpStr;
     }
 
 
