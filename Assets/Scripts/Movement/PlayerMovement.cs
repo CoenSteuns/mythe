@@ -12,6 +12,7 @@ public class PlayerMovement : Movement
 
     void FixedUpdate()
     {
+        
         var inputVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         var speed = IsSprinting(inputVector) ? _sprintSpeed : _normalSpeed;
         Move(inputVector, speed);
