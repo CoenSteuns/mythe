@@ -6,6 +6,7 @@ public class Dash : MonoBehaviour
 {
     private Rigidbody _rb;
 
+    private GameObject _camera;
     private Vector3 _dash = Vector3.forward;
     [SerializeField] [Range(0, 500)] private float _dashStrenght;
 
@@ -14,18 +15,19 @@ public class Dash : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+	    _camera = Camera.main.gameObject;
 	    _rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-	    _dash = transform.forward;//transform.TransformDirection(Vector3.forward);
+	    _dash = _camera.transform.forward;//transform.TransformDirection(Vector3.forward);
 
 		if (Input.GetKeyDown("e") || Input.GetAxisRaw("Dash") == 1 && _keyUp)
 	    {
 	        _rb.AddForce(_dash*_dashStrenght,ForceMode.VelocityChange);
 	    }
-		_keyUp = Input.GetAxisRaw ("dash") == 1 ? false : true;
+		_keyUp = Input.GetAxisRaw ("Dash") == 1 ? false : true;
 	}
 }
