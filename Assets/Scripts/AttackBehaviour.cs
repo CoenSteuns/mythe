@@ -7,6 +7,8 @@ public class AttackBehaviour : MonoBehaviour
 {
 
     private Animator _ani;
+
+    [SerializeField] private AnimationClip AttackAni;
 	// Use this for initialization
 	void Start ()
 	{
@@ -15,27 +17,19 @@ public class AttackBehaviour : MonoBehaviour
 	
 	// Update is called once per frame
     private void Update () {
-	    if (Input.GetMouseButtonDown(0))
-	    {
-
-            _ani.SetFloat("Attack",1f);
-	        //_ani.SetFloat("Attack", 0.1f);
-
-	    }
-	    if (Input.GetMouseButtonUp(0))
-
-	    {
-	        _ani.SetFloat("Attack", 0.1f);
-	    }
-
-		
-	}
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
+        if (Input.GetMouseButtonDown(0))
         {
-           Destroy(other.gameObject);
+            _ani.SetBool("Attack",true);
+            StartCoroutine(AttackTimer());
+
         }
+
+
+    }
+
+    IEnumerator AttackTimer()
+    {
+        yield return new WaitForSeconds(AttackAni.length);
+        _ani.SetBool("Attack", false);
     }
 }
