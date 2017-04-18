@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Gravity : MonoBehaviour
 {
-    [SerializeField]
-    private float GravityStr;
+    [SerializeField] private float GravityStr;
     private Rigidbody _rb;
 	// Use this for initialization
 	void Start ()
