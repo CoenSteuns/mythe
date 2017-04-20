@@ -16,8 +16,6 @@ public class Movement : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-
-
     public void Move(Vector3 _velocity, float speed = 2)
     {
         if (!_canMove)

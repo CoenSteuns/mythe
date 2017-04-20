@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine.Events;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -68,31 +67,26 @@ public class Counter
 
     public void Start()
     {
-        if (_monoBehaviour == null)
+        if (!CheckMonobehavior())
         {
-            _monoBehaviour = Object.FindObjectOfType<MonoBehaviour>();
-            if (_monoBehaviour == null)
-            {
-                Debug.Log("No monobehavior in scene!");
-                return;
-            }
+            return;
         }
         _timerCoroutine = _monoBehaviour.StartCoroutine(TimerCoroutine());
     }
 
     public void Stop()
     {
+        if (!CheckMonobehavior())
+        {
+            return;
+        }
         _monoBehaviour.StopCoroutine(_timerCoroutine);
         _currentTime = _startTime;
     }
 
-    public void Reset(bool stopTimer = false)
+    public void Reset()
     {
         _currentTime = _startTime;
-        if (stopTimer)
-        {
-            Stop();
-        }
     }
 
     public void SetMonobehavior(MonoBehaviour mono)
@@ -113,6 +107,20 @@ public class Counter
             }
             yield return null;
         }
+    }
+
+    private bool CheckMonobehavior()
+    {
+        if (_monoBehaviour != null) { return  true;}
+      
+        _monoBehaviour = Object.FindObjectOfType<MonoBehaviour>();
+        if (_monoBehaviour == null)
+        {
+            Debug.Log("No monobehavior in scene!");
+            return false;
+        }
+        
+        return true;
     }
 
 }
