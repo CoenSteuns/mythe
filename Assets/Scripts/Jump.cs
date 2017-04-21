@@ -10,13 +10,14 @@ public class Jump : MonoBehaviour
     private bool _grounded;
     private Rigidbody _rb;
     [SerializeField]
-    private float _timer;
+    private Counter _timer;
 	[SerializeField]
 	private float _minJumpStr;
 
-    private bool _KeyUp;
+    private bool _keyDown;
+    private bool TimerON;
 
-    [SerializeField] private float _maxJump = 800;
+    [SerializeField] private float _maxJump;
   //private  Vector3 _v = new Vector3(0,-5,0);
 
 
@@ -24,12 +25,17 @@ public class Jump : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+	    _timer = new Counter();
+	    _timer.SetMonobehavior(this);
+
 	    _rb = GetComponent<Rigidbody>();
 	}
 
-    void Update()
+    private void Update()
     {
 
+
+        print(_timer.CurrentTime);
         RaycastHit hit;
         Vector3 downRay = transform.TransformDirection(Vector3.down);
         Debug.DrawRay(transform.position, downRay, Color.black);
@@ -57,29 +63,33 @@ public class Jump : MonoBehaviour
 
         if (Input.GetAxisRaw("Jump")==1)
         {
-            _KeyUp = true;
-                _timer++;
-            if (_timer > 100)
+
+            _timer.Start();
+
+            if (_timer.CurrentTime >= 3)
             {
+                print(_timer.CurrentTime);
                 _jumpStrenght++;
 
             }
         }
-        if (Input.GetAxisRaw("Jump")==0 && _grounded && _KeyUp)
+        if (Input.GetAxisRaw("Jump")==0 && _grounded && _keyDown)
         {
             print("gek");
             Jumper();
-            _timer = 0;
-            _KeyUp = false;
+            _keyDown = false;
         }
 
     }
 
+
     private void Jumper()
     {
+        _timer.Reset();
         _rb.AddForce(0, _jumpStrenght, 0, ForceMode.VelocityChange);
 		_jumpStrenght = _minJumpStr;
     }
+
 
 
 
