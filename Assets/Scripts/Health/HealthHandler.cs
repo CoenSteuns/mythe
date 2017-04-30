@@ -22,7 +22,6 @@ public class HealthHandler : Health
     {
         base.SubtractHealth(amount);
         CheckCurrentHealth();
-        print(_currentHealth);
     }
 
     private void CheckCurrentHealth()

@@ -11,6 +11,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1902791301945188}
   m_IsPrefabParent: 1
+--- !u!1 &1862143309066852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4524013495306238}
+  - component: {fileID: 108353761772846602}
+  - component: {fileID: 135631257979935738}
+  - component: {fileID: 114599092499437854}
+  - component: {fileID: 114092665823160032}
+  m_Layer: 0
+  m_Name: Area Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1902791301945188
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +43,10 @@ GameObject:
   - component: {fileID: 23098684070083780}
   - component: {fileID: 114888567673912724}
   - component: {fileID: 195452669149610416}
-  - component: {fileID: 114519152102122940}
+  - component: {fileID: 114602896004894146}
+  - component: {fileID: 114145433734956688}
+  - component: {fileID: 114368804579637518}
+  - component: {fileID: 114515808131337332}
   m_Layer: 0
   m_Name: Person
   m_TagString: Enemy
@@ -32,16 +54,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4524013495306238
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862143309066852}
+  m_LocalRotation: {x: 0.5574322, y: -0.43505114, z: 0.435051, w: 0.5574322}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1801956, y: 0.18019539, z: 0.1801957}
+  m_Children: []
+  m_Father: {fileID: 4603337278853384}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4603337278853384
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902791301945188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.322, y: -0.0028, z: -0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_Children: []
+  m_LocalRotation: {x: -0, y: -0, z: 6.242688e-16, w: 1}
+  m_LocalPosition: {x: 0.32199994, y: -0.002799999, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.009999998}
+  m_Children:
+  - {fileID: 4524013495306238}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -83,7 +119,54 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902791301945188}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114519152102122940
+--- !u!108 &108353761772846602
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862143309066852}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 179
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &114092665823160032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862143309066852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ef81cbeac51d048aa45cc862f16f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damagePerSecond: 20
+  _healthHolder: Player
+--- !u!114 &114145433734956688
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -91,10 +174,113 @@ MonoBehaviour:
   m_GameObject: {fileID: 1902791301945188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd4bcb974a170f4393ab123a1bae300, type: 3}
+  m_Script: {fileID: 11500000, guid: e97416503b0bb814781ddfdee3afccbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypointObject: {fileID: 0}
+  StateMachine: {fileID: 0}
+--- !u!114 &114368804579637518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902791301945188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f0f70f454c1274099df9abaa3b92f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rangeOfPerception: 150
+  _distanceToFront: 110
+  _acceptedColliders:
+  - Player
+  _ifContains: 0
+  _drawGizmos: 0
+  _drawGizmosOnEnterState: 1
+  _speed: 10
+  _playerName: Player
+  _timeInFollowWithoutPlayer: 4
+--- !u!114 &114515808131337332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902791301945188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1ad6db0af1c0143ab93ff46a2cff4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114599092499437854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862143309066852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e30a8f3561ef74e943231dd1f93382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventTags:
+  - Player
+  _collisionEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114092665823160032}
+        m_MethodName: StartDamaging
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _collisionStayEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _collisionExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114092665823160032}
+        m_MethodName: StopDamaging
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &114602896004894146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902791301945188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f147b7f636b4d419722afb42eef6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rangeOfPerception: 60
+  _distanceToFront: 50
+  _acceptedColliders:
+  - Player
+  _ifContains: 1
+  _drawGizmos: 0
+  _drawGizmosOnEnterState: 1
+  _speed: 3.5
+  _rangeToChangeTarget: 0.1
+  _waypontObjectName: waypoints
 --- !u!114 &114888567673912724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,6 +308,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!135 &135631257979935738
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862143309066852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 10.605807
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136839038380319174
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
 
     [SerializeField] protected float _power = 2;
+    [SerializeField] protected float _normalSpeed = 40;
     protected bool _canMove = true;
     protected Vector3 _movementChange;
     private Rigidbody rigidbody;

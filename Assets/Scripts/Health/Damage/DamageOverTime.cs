@@ -6,7 +6,9 @@ public class DamageOverTime : MonoBehaviour
 {
     [SerializeField] private float _damagePerSecond;
     [Space(15)]
-    [SerializeField] private HealthHandler _health;
+    [SerializeField] private string _healthHolder;
+
+    private HealthHandler _health;
 
     private bool _isDamaging;
 
@@ -14,6 +16,11 @@ public class DamageOverTime : MonoBehaviour
     {
         get { return _damagePerSecond; }
         set { DamagePerSecond = value; }
+    }
+
+    void Start()
+    {
+        _health = GameObject.Find(_healthHolder).GetComponent<HealthHandler>();
     }
 
     public void StartDamaging()
