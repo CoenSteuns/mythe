@@ -622,6 +622,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  Collider: {fileID: 0}
 --- !u!23 &444575649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3973,6 +3974,7 @@ GameObject:
   - component: {fileID: 849501776}
   - component: {fileID: 849501778}
   - component: {fileID: 849501777}
+  - component: {fileID: 849501779}
   m_Layer: 0
   m_Name: hitanimation
   m_TagString: Hands
@@ -4024,6 +4026,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!64 &849501779
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849501775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!1 &866322888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,10 +4121,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 866322888}
   m_LocalRotation: {x: -0.005568197, y: 0.07750094, z: -0.0004328487, w: 0.9969767}
-  m_LocalPosition: {x: 0.016999817, y: 1.275, z: -0.036999512}
+  m_LocalPosition: {x: 0.016999817, y: 1.57, z: -0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 148306270}
+  - {fileID: 1824735967}
   m_Father: {fileID: 1522993903}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 8.89, z: 0}
@@ -4611,6 +4628,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  Collider: {fileID: 0}
 --- !u!23 &1320250154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4905,6 +4923,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  Collider: {fileID: 0}
 --- !u!23 &1358652928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5322,7 +5341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpStrenght: 50
-  _timer: 0
   _minJumpStr: 50
   _maxJump: 150
 --- !u!23 &1522993900
@@ -5402,7 +5420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90a38701b6130e4ebbb98ceeb40d792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dashStrenght: 500
+  _dashStrenght: 288
 --- !u!114 &1522993905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5764,6 +5782,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  Collider: {fileID: 0}
 --- !u!54 &1814633969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5779,6 +5798,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1824735966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1824735967}
+  - component: {fileID: 1824735968}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824735967
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824735966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -1.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 866322893}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1824735968
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824735966}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 1638.83
+  m_SpotAngle: 50.7
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1871758928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6015,69 +6097,6 @@ Transform:
   m_Father: {fileID: 1764689993}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2080005230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2080005231}
-  - component: {fileID: 2080005232}
-  m_Layer: 0
-  m_Name: Directional light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2080005231
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2080005230}
-  m_LocalRotation: {x: 0.5281971, y: -0.043418437, z: -0.063104704, w: 0.84565985}
-  m_LocalPosition: {x: 227, y: 480, z: -269}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 62.607002, y: -17.728, z: -19.37}
---- !u!108 &2080005232
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2080005230}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &2112829002
 Prefab:
   m_ObjectHideFlags: 0

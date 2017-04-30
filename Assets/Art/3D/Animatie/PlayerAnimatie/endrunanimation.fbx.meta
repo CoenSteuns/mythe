@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: 347f8741c7cb7404abe1fbc841b7695b
+timeCreated: 1492783964
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: graybox_arms_donerigbestand:dont_touch
+    100004: graybox_arms_donerigbestand:group3
+    100006: graybox_arms_donerigbestand:L_arm_mesh
+    100008: graybox_arms_donerigbestand:L_base_index
+    100010: graybox_arms_donerigbestand:L_base_mid
+    100012: graybox_arms_donerigbestand:L_base_thumb
+    100014: graybox_arms_donerigbestand:L_elbow
+    100016: graybox_arms_donerigbestand:L_index_joint_1
+    100018: graybox_arms_donerigbestand:L_index_joint_2
+    100020: graybox_arms_donerigbestand:L_index_joint_3
+    100022: graybox_arms_donerigbestand:L_mid_1
+    100024: graybox_arms_donerigbestand:L_mid_2
+    100026: graybox_arms_donerigbestand:L_mid_3
+    100028: graybox_arms_donerigbestand:L_pink_1
+    100030: graybox_arms_donerigbestand:L_pink_2
+    100032: graybox_arms_donerigbestand:L_pink_3
+    100034: graybox_arms_donerigbestand:L_pink_base
+    100036: graybox_arms_donerigbestand:L_polse
+    100038: graybox_arms_donerigbestand:L_ring_1
+    100040: graybox_arms_donerigbestand:L_ring_2
+    100042: graybox_arms_donerigbestand:L_ring_3
+    100044: graybox_arms_donerigbestand:L_ring_base
+    100046: graybox_arms_donerigbestand:L_shoulder
+    100048: graybox_arms_donerigbestand:L_thumb_joint_1
+    100050: graybox_arms_donerigbestand:L_thumb_joint_2
+    100052: graybox_arms_donerigbestand:R_arm_mesh
+    100054: graybox_arms_donerigbestand:R_base_index
+    100056: graybox_arms_donerigbestand:R_base_mid
+    100058: graybox_arms_donerigbestand:R_base_thumb
+    100060: graybox_arms_donerigbestand:R_elbow
+    100062: graybox_arms_donerigbestand:R_index_joint_1
+    100064: graybox_arms_donerigbestand:R_index_joint_2
+    100066: graybox_arms_donerigbestand:R_index_joint_3
+    100068: graybox_arms_donerigbestand:R_mid_1
+    100070: graybox_arms_donerigbestand:R_mid_2
+    100072: graybox_arms_donerigbestand:R_mid_3
+    100074: graybox_arms_donerigbestand:R_pink_1
+    100076: graybox_arms_donerigbestand:R_pink_2
+    100078: graybox_arms_donerigbestand:R_pink_3
+    100080: graybox_arms_donerigbestand:R_pink_base
+    100082: graybox_arms_donerigbestand:R_polse
+    100084: graybox_arms_donerigbestand:R_ring_1
+    100086: graybox_arms_donerigbestand:R_ring_2
+    100088: graybox_arms_donerigbestand:R_ring_3
+    100090: graybox_arms_donerigbestand:R_ring_base
+    100092: graybox_arms_donerigbestand:R_shoulder
+    100094: graybox_arms_donerigbestand:R_thumb_joint_1
+    100096: graybox_arms_donerigbestand:R_thumb_joint_2
+    400000: //RootNode
+    400002: graybox_arms_donerigbestand:dont_touch
+    400004: graybox_arms_donerigbestand:group3
+    400006: graybox_arms_donerigbestand:L_arm_mesh
+    400008: graybox_arms_donerigbestand:L_base_index
+    400010: graybox_arms_donerigbestand:L_base_mid
+    400012: graybox_arms_donerigbestand:L_base_thumb
+    400014: graybox_arms_donerigbestand:L_elbow
+    400016: graybox_arms_donerigbestand:L_index_joint_1
+    400018: graybox_arms_donerigbestand:L_index_joint_2
+    400020: graybox_arms_donerigbestand:L_index_joint_3
+    400022: graybox_arms_donerigbestand:L_mid_1
+    400024: graybox_arms_donerigbestand:L_mid_2
+    400026: graybox_arms_donerigbestand:L_mid_3
+    400028: graybox_arms_donerigbestand:L_pink_1
+    400030: graybox_arms_donerigbestand:L_pink_2
+    400032: graybox_arms_donerigbestand:L_pink_3
+    400034: graybox_arms_donerigbestand:L_pink_base
+    400036: graybox_arms_donerigbestand:L_polse
+    400038: graybox_arms_donerigbestand:L_ring_1
+    400040: graybox_arms_donerigbestand:L_ring_2
+    400042: graybox_arms_donerigbestand:L_ring_3
+    400044: graybox_arms_donerigbestand:L_ring_base
+    400046: graybox_arms_donerigbestand:L_shoulder
+    400048: graybox_arms_donerigbestand:L_thumb_joint_1
+    400050: graybox_arms_donerigbestand:L_thumb_joint_2
+    400052: graybox_arms_donerigbestand:R_arm_mesh
+    400054: graybox_arms_donerigbestand:R_base_index
+    400056: graybox_arms_donerigbestand:R_base_mid
+    400058: graybox_arms_donerigbestand:R_base_thumb
+    400060: graybox_arms_donerigbestand:R_elbow
+    400062: graybox_arms_donerigbestand:R_index_joint_1
+    400064: graybox_arms_donerigbestand:R_index_joint_2
+    400066: graybox_arms_donerigbestand:R_index_joint_3
+    400068: graybox_arms_donerigbestand:R_mid_1
+    400070: graybox_arms_donerigbestand:R_mid_2
+    400072: graybox_arms_donerigbestand:R_mid_3
+    400074: graybox_arms_donerigbestand:R_pink_1
+    400076: graybox_arms_donerigbestand:R_pink_2
+    400078: graybox_arms_donerigbestand:R_pink_3
+    400080: graybox_arms_donerigbestand:R_pink_base
+    400082: graybox_arms_donerigbestand:R_polse
+    400084: graybox_arms_donerigbestand:R_ring_1
+    400086: graybox_arms_donerigbestand:R_ring_2
+    400088: graybox_arms_donerigbestand:R_ring_3
+    400090: graybox_arms_donerigbestand:R_ring_base
+    400092: graybox_arms_donerigbestand:R_shoulder
+    400094: graybox_arms_donerigbestand:R_thumb_joint_1
+    400096: graybox_arms_donerigbestand:R_thumb_joint_2
+    4300000: graybox_arms_donerigbestand:L_arm_mesh
+    4300002: graybox_arms_donerigbestand:R_arm_mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: graybox_arms_donerigbestand:L_arm_mesh
+    13700002: graybox_arms_donerigbestand:R_arm_mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_arm_mesh
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_index
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_index/graybox_arms_donerigbestand:L_index_joint_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_index/graybox_arms_donerigbestand:L_index_joint_1/graybox_arms_donerigbestand:L_index_joint_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_index/graybox_arms_donerigbestand:L_index_joint_1/graybox_arms_donerigbestand:L_index_joint_2/graybox_arms_donerigbestand:L_index_joint_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_mid
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_mid/graybox_arms_donerigbestand:L_mid_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_mid/graybox_arms_donerigbestand:L_mid_1/graybox_arms_donerigbestand:L_mid_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_mid/graybox_arms_donerigbestand:L_mid_1/graybox_arms_donerigbestand:L_mid_2/graybox_arms_donerigbestand:L_mid_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_thumb
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_thumb/graybox_arms_donerigbestand:L_thumb_joint_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_base_thumb/graybox_arms_donerigbestand:L_thumb_joint_1/graybox_arms_donerigbestand:L_thumb_joint_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_pink_base
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_pink_base/graybox_arms_donerigbestand:L_pink_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_pink_base/graybox_arms_donerigbestand:L_pink_1/graybox_arms_donerigbestand:L_pink_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_pink_base/graybox_arms_donerigbestand:L_pink_1/graybox_arms_donerigbestand:L_pink_2/graybox_arms_donerigbestand:L_pink_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_ring_base
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_ring_base/graybox_arms_donerigbestand:L_ring_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_ring_base/graybox_arms_donerigbestand:L_ring_1/graybox_arms_donerigbestand:L_ring_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:L_shoulder/graybox_arms_donerigbestand:L_elbow/graybox_arms_donerigbestand:L_polse/graybox_arms_donerigbestand:L_ring_base/graybox_arms_donerigbestand:L_ring_1/graybox_arms_donerigbestand:L_ring_2/graybox_arms_donerigbestand:L_ring_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_arm_mesh
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_index
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_index/graybox_arms_donerigbestand:R_index_joint_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_index/graybox_arms_donerigbestand:R_index_joint_1/graybox_arms_donerigbestand:R_index_joint_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_index/graybox_arms_donerigbestand:R_index_joint_1/graybox_arms_donerigbestand:R_index_joint_2/graybox_arms_donerigbestand:R_index_joint_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_mid
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_mid/graybox_arms_donerigbestand:R_mid_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_mid/graybox_arms_donerigbestand:R_mid_1/graybox_arms_donerigbestand:R_mid_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_mid/graybox_arms_donerigbestand:R_mid_1/graybox_arms_donerigbestand:R_mid_2/graybox_arms_donerigbestand:R_mid_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_thumb
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_thumb/graybox_arms_donerigbestand:R_thumb_joint_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_base_thumb/graybox_arms_donerigbestand:R_thumb_joint_1/graybox_arms_donerigbestand:R_thumb_joint_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_pink_base
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_pink_base/graybox_arms_donerigbestand:R_pink_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_pink_base/graybox_arms_donerigbestand:R_pink_1/graybox_arms_donerigbestand:R_pink_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_pink_base/graybox_arms_donerigbestand:R_pink_1/graybox_arms_donerigbestand:R_pink_2/graybox_arms_donerigbestand:R_pink_3
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_ring_base
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_ring_base/graybox_arms_donerigbestand:R_ring_1
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_ring_base/graybox_arms_donerigbestand:R_ring_1/graybox_arms_donerigbestand:R_ring_2
+        weight: 1
+      - path: graybox_arms_donerigbestand:group3/graybox_arms_donerigbestand:dont_touch/graybox_arms_donerigbestand:R_shoulder/graybox_arms_donerigbestand:R_elbow/graybox_arms_donerigbestand:R_polse/graybox_arms_donerigbestand:R_ring_base/graybox_arms_donerigbestand:R_ring_1/graybox_arms_donerigbestand:R_ring_2/graybox_arms_donerigbestand:R_ring_3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

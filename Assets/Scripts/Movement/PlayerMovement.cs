@@ -8,7 +8,11 @@ public class PlayerMovement : Movement
     [SerializeField] private float _normalSpeed = 15;
     [SerializeField] private float _sprintSpeed = 25;
 
+
     private bool _isSprinting = false;
+	void Awake(){
+		);
+	}
 
     void FixedUpdate()
     {

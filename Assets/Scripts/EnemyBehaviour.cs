@@ -5,22 +5,16 @@ using UnityEngine.Events;
 public class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] private UnityEvent _death;
+
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other.CompareTag("Hands"))
-        {
-           _death.Invoke();
-        }
+
     }
 
     public void Death()
