@@ -12,9 +12,11 @@ public class Movement : MonoBehaviour
     private Rigidbody rigidbody;
 
 
+
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
+
     }
 
     public void Move(Vector3 _velocity, float speed = 2)
@@ -34,6 +36,7 @@ public class Movement : MonoBehaviour
                 Mathf.Clamp(velocityChange.z, -1, _power)
             );
         rigidbody.AddForce(velocityChange, ForceMode.VelocityChange);
+
 
     }
 
