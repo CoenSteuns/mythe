@@ -37,10 +37,10 @@ public class PlayerInput : MonoBehaviour {
     private void MovementInput()
     {
         var movementInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        if (movementInput.magnitude > 0.2 && _movement.isSprinting || movementInput.magnitude > 0.2 && Input.GetAxisRaw("Sprint") == 1)
-        { _movement.isSprinting = true; }
+        if (movementInput.magnitude > 0.2 && _movement.IsSprinting || movementInput.magnitude > 0.2 && Input.GetAxisRaw("Sprint") == 1)
+        { _movement.IsSprinting = true; }
         else
-        {_movement.isSprinting = false; }
+        {_movement.IsSprinting = false; }
 
         _movement.SetMovement(movementInput);
     }

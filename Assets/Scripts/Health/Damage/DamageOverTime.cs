@@ -5,10 +5,9 @@ using UnityEngine;
 public class DamageOverTime : MonoBehaviour
 {
     [SerializeField] private float _damagePerSecond;
-    [Space(15)]
-    [SerializeField] private string _healthHolder;
+    [Space(15)] [SerializeField] private string _healthHolder;//Name of the object with the HealthHandler component.
 
-    private HealthHandler _health;
+    private HealthHandler _health;//The health handler.
 
     private bool _isDamaging;
 
@@ -18,27 +17,47 @@ public class DamageOverTime : MonoBehaviour
         set { DamagePerSecond = value; }
     }
 
+    public bool IsDamaging
+    {
+        get { return _isDamaging; }
+    }
+
     void Start()
     {
         _health = GameObject.Find(_healthHolder).GetComponent<HealthHandler>();
     }
 
+    /// <summary>
+    /// Start damaging the health.
+    /// </summary>
     public void StartDamaging()
     {
+        if (_health == null || _isDamaging)
+            return;
+
         _isDamaging = true;
+        StartCoroutine(Damage());
     }
+
+    /// <summary>
+    /// Stom damaging the health.
+    /// </summary>
     public void StopDamaging()
     {
         _isDamaging = false;
     }
 
-    void Update()
+    /// <summary>
+    /// Damages the healthHandler.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator Damage()
     {
-        if (!_isDamaging)
+        while (_isDamaging)
         {
-            return;
+            _health.SubtractHealth(_damagePerSecond * Time.deltaTime);
+            yield return null;
         }
-        _health.SubtractHealth(_damagePerSecond*Time.deltaTime);
     }
 
 }
