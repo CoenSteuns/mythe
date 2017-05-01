@@ -10,9 +10,6 @@ public class PlayerMovement : Movement
 
 
     private bool _isSprinting = false;
-	void Awake(){
-		);
-	}
 
     void FixedUpdate()
     {

@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 7a782eb263fdeb346b374ff65920274a
+timeCreated: 1493553620
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: graybox_0003:back_joint1
+    100002: graybox_0003:back_joint10
+    100004: graybox_0003:back_joint11
+    100006: graybox_0003:back_joint2
+    100008: graybox_0003:back_joint3
+    100010: graybox_0003:back_joint4
+    100012: graybox_0003:back_joint5
+    100014: graybox_0003:back_joint6
+    100016: graybox_0003:back_joint7
+    100018: graybox_0003:back_joint8
+    100020: graybox_0003:back_joint9
+    100022: graybox_0003:dont_touch_eighter
+    100024: graybox_0003:L_cavicle
+    100026: graybox_0003:L_elbow
+    100028: graybox_0003:L_enkle
+    100030: graybox_0003:L_foot
+    100032: graybox_0003:L_hand
+    100034: graybox_0003:L_hip_joint
+    100036: graybox_0003:L_knee
+    100038: graybox_0003:L_polse
+    100040: graybox_0003:L_shoulder
+    100042: graybox_0003:lowest_neck_joint
+    100044: graybox_0003:mesh
+    100046: graybox_0003:mid_neck_joint
+    100048: graybox_0003:R_cavicle
+    100050: graybox_0003:R_elbow
+    100052: graybox_0003:R_enkle
+    100054: graybox_0003:R_foot
+    100056: graybox_0003:R_hand
+    100058: graybox_0003:R_hip_joint
+    100060: graybox_0003:R_knee
+    100062: graybox_0003:R_polse
+    100064: graybox_0003:R_shoulder
+    100066: graybox_0003:top_head_joint
+    100068: //RootNode
+    400000: graybox_0003:back_joint1
+    400002: graybox_0003:back_joint10
+    400004: graybox_0003:back_joint11
+    400006: graybox_0003:back_joint2
+    400008: graybox_0003:back_joint3
+    400010: graybox_0003:back_joint4
+    400012: graybox_0003:back_joint5
+    400014: graybox_0003:back_joint6
+    400016: graybox_0003:back_joint7
+    400018: graybox_0003:back_joint8
+    400020: graybox_0003:back_joint9
+    400022: graybox_0003:dont_touch_eighter
+    400024: graybox_0003:L_cavicle
+    400026: graybox_0003:L_elbow
+    400028: graybox_0003:L_enkle
+    400030: graybox_0003:L_foot
+    400032: graybox_0003:L_hand
+    400034: graybox_0003:L_hip_joint
+    400036: graybox_0003:L_knee
+    400038: graybox_0003:L_polse
+    400040: graybox_0003:L_shoulder
+    400042: graybox_0003:lowest_neck_joint
+    400044: graybox_0003:mesh
+    400046: graybox_0003:mid_neck_joint
+    400048: graybox_0003:R_cavicle
+    400050: graybox_0003:R_elbow
+    400052: graybox_0003:R_enkle
+    400054: graybox_0003:R_foot
+    400056: graybox_0003:R_hand
+    400058: graybox_0003:R_hip_joint
+    400060: graybox_0003:R_knee
+    400062: graybox_0003:R_polse
+    400064: graybox_0003:R_shoulder
+    400066: graybox_0003:top_head_joint
+    400068: //RootNode
+    4300000: graybox_0003:mesh
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: graybox_0003:mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6/graybox_0003:back_joint7
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6/graybox_0003:back_joint7/graybox_0003:back_joint8
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6/graybox_0003:back_joint7/graybox_0003:back_joint8/graybox_0003:back_joint9
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6/graybox_0003:back_joint7/graybox_0003:back_joint8/graybox_0003:back_joint9/graybox_0003:back_joint10
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:back_joint1/graybox_0003:back_joint2/graybox_0003:back_joint3/graybox_0003:back_joint4/graybox_0003:back_joint5/graybox_0003:back_joint6/graybox_0003:back_joint7/graybox_0003:back_joint8/graybox_0003:back_joint9/graybox_0003:back_joint10/graybox_0003:back_joint11
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:L_hip_joint
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:L_hip_joint/graybox_0003:L_knee
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:L_hip_joint/graybox_0003:L_knee/graybox_0003:L_enkle
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:L_hip_joint/graybox_0003:L_knee/graybox_0003:L_enkle/graybox_0003:L_foot
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:lowest_neck_joint
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:lowest_neck_joint/graybox_0003:mid_neck_joint
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:lowest_neck_joint/graybox_0003:mid_neck_joint/graybox_0003:top_head_joint
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:R_hip_joint
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:R_hip_joint/graybox_0003:R_knee
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:R_hip_joint/graybox_0003:R_knee/graybox_0003:R_enkle
+        weight: 1
+      - path: graybox_0003:dont_touch_eighter/graybox_0003:R_hip_joint/graybox_0003:R_knee/graybox_0003:R_enkle/graybox_0003:R_foot
+        weight: 1
+      - path: graybox_0003:L_cavicle
+        weight: 1
+      - path: graybox_0003:L_cavicle/graybox_0003:L_shoulder
+        weight: 1
+      - path: graybox_0003:L_cavicle/graybox_0003:L_shoulder/graybox_0003:L_elbow
+        weight: 1
+      - path: graybox_0003:L_cavicle/graybox_0003:L_shoulder/graybox_0003:L_elbow/graybox_0003:L_polse
+        weight: 1
+      - path: graybox_0003:L_cavicle/graybox_0003:L_shoulder/graybox_0003:L_elbow/graybox_0003:L_polse/graybox_0003:L_hand
+        weight: 1
+      - path: graybox_0003:mesh
+        weight: 1
+      - path: graybox_0003:R_cavicle
+        weight: 1
+      - path: graybox_0003:R_cavicle/graybox_0003:R_shoulder
+        weight: 1
+      - path: graybox_0003:R_cavicle/graybox_0003:R_shoulder/graybox_0003:R_elbow
+        weight: 1
+      - path: graybox_0003:R_cavicle/graybox_0003:R_shoulder/graybox_0003:R_elbow/graybox_0003:R_polse
+        weight: 1
+      - path: graybox_0003:R_cavicle/graybox_0003:R_shoulder/graybox_0003:R_elbow/graybox_0003:R_polse/graybox_0003:R_hand
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
