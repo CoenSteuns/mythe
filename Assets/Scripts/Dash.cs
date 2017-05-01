@@ -2,41 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Dash : MonoBehaviour
 {
+    
+    [SerializeField] [Range(0, 500)] private float _dashStrenght = 100;
+    [SerializeField] private float _cooldownTime = 1;
+
+    private bool _iSCoolingDown;
+
     private Rigidbody _rb;
-
     private GameObject _camera;
-    private Vector3 _dash = Vector3.forward;
-    [SerializeField] [Range(0, 500)] private float _dashStrenght;
-    private Counter _timer;
 
-	private bool _keyUp = true;
-
-	// Use this for initialization
 	void Start ()
 	{
-	    _timer = new Counter(5,CounterMode.Down);
-	    _timer.SetMonobehavior(this);
-	    _timer.Start();
 	    _camera = Camera.main.gameObject;
 	    _rb = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate ()
-	{
-	    _dash = _camera.transform.forward;//transform.TransformDirection(Vector3.forward);
 
-		if (Input.GetKeyDown("e") || Input.GetAxisRaw("Dash") == 1 && _keyUp)
-		{
-	        if (_timer.CurrentTime <= 0)
-	        {
-	            _rb.AddForce(_dash*_dashStrenght,ForceMode.VelocityChange);
-	            _timer.Reset();
-	        }
+    public void DashToCameraViewDirection()
+    {
+        DashInDirection(_camera.transform.forward);
+    }
 
-	    }
-		_keyUp = Input.GetAxisRaw ("Dash") == 1 ? false : true;
-	}
+    public void DashForward()
+    {
+        DashInDirection(transform.forward);
+    }
+
+    public void DashInDirection(Vector3 direction)
+    {
+        if (_iSCoolingDown)
+            return;
+
+        _rb.AddForce(direction *_dashStrenght, ForceMode.VelocityChange);
+        _iSCoolingDown = true;
+        StartCoroutine(DashCooldown());
+    }
+
+    private IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(_cooldownTime);
+        _iSCoolingDown = false;
+    }
+
 }

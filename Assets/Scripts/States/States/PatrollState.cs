@@ -27,6 +27,10 @@ public class PatrollState : PerceptionState {
     public override void EnterState()
     {
         base.EnterState();
+        if (_navMeshAgent == null)
+        {
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+        }
         _navMeshAgent.speed = _speed;
     }
 

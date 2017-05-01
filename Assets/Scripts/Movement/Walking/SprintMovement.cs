@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SprintMovement : Movement
 {
-    [SerializeField] private float _sprintSpeed = 25;
+    [SerializeField] private float _sprintSpeed = 60;
 
     public bool isSprinting = false;
 
