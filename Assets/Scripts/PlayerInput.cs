@@ -10,7 +10,8 @@ public class PlayerInput : MonoBehaviour {
     private bool _jumpKeyDown;
 	[SerializeField]
 	private AnimationClip _startrunning;
-	private AnimationClip _Endrunning;
+	[SerializeField]
+	private AnimationClip _jumpStart;
     
 	// Use this for initialization
 	void Start () {
@@ -51,14 +52,13 @@ public class PlayerInput : MonoBehaviour {
     {
         if (Input.GetAxisRaw("Jump") == 1 && !_jumpKeyDown)
         {
-			_ani.SetBool ("Jump", true);
+			
             _jumpKeyDown = true;
-
             _jump.StartCharge();
         }
         if (Input.GetAxisRaw("Jump") == 0 && _jumpKeyDown)
 		{
-			_ani.SetBool ("Jump", false);
+			//_ani.SetBool ("Jump", false);
             _jumpKeyDown = false;
             _jump.StopCharge();
         }

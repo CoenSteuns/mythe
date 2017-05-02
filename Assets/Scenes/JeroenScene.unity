@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0aebd19a0c5c9334db9eea748360a37d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -5331,6 +5331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startrunning: {fileID: 7400000, guid: df534181df26b644ebe6b248a38254dd, type: 3}
+  _jumpStart: {fileID: 7400000, guid: 6106ff52f537e47498266411836b48fd, type: 3}
 --- !u!54 &1522993898
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5477,8 +5478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _normalJumpStrenght: 50
   _maxJumpStrenght: 200
-  _chargeSpeed: 1
-  _ChargeDelay: 3
+  _chargeSpeed: 3
+  _ChargeDelay: 0.5
 --- !u!114 &1522993908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5879,10 +5880,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 7
   m_Type: 0
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.7137931, g: 0.22568458, b: 0.22568458, a: 1}
+  m_Intensity: 0.59
   m_Range: 1638.83
-  m_SpotAngle: 50.7
+  m_SpotAngle: 161.8
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
