@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
@@ -9,21 +7,47 @@ public class Health : MonoBehaviour
 
     protected float _currentHealth;
 
-    void Awake()
+    //getters and setters
+    public float StartHealth
     {
-        _currentHealth = _startHealth;
+        get { return _startHealth; }
+        set { _startHealth = value; }
+    }
+    public float CurrentHealth
+    {
+        get { return _currentHealth; }
     }
 
+    void Awake()
+    {
+        ResetHealth();
+    }
+
+    /// <summary>
+    /// Subtracts health from the current health
+    /// </summary>
+    /// <param name="amount">The subtracted amount.</param>
     public virtual void SubtractHealth(float amount)
     {
         _currentHealth -= amount;
         
     }
 
+    /// <summary>
+    /// Adds to the current health.
+    /// </summary>
+    /// <param name="amount">The added amount.</param>
     public virtual void AddHealth(float amount)
     {
         _currentHealth += amount;
     }
     
+    /// <summary>
+    /// Resets health to start health.
+    /// </summary>
+    public virtual void ResetHealth()
+    {
+        _currentHealth = _startHealth;
+    }
 
 }

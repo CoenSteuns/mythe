@@ -13,6 +13,28 @@ public class TriggerEventHandler : MonoBehaviour {
     [SerializeField] private UnityEvent _collisionStayEvent;//Invoked OnTriggerStay is called and the other tag is an accepted tag.
     [SerializeField] private UnityEvent _collisionExitEvent;//Invoked OnTriggerExit is called and the other tag is an accepted tag.
 
+    //Getters and Setters
+    public UnityEvent CollisionEnterEvent
+    {
+        get { return _collisionEnterEvent; }
+        set { _collisionEnterEvent = value; }
+    }
+    public UnityEvent CollisionStayEvent
+    {
+        get { return _collisionStayEvent; }
+        set { _collisionStayEvent = value; }
+    }
+    public UnityEvent CollisionExitEvent
+    {
+        get { return _collisionExitEvent; }
+        set { _collisionExitEvent = value; }
+    }
+
+    public List<string> EventTags
+    {
+        get { return _eventTags; }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (OtherTagIsAccepted(other))

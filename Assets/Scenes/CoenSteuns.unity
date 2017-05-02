@@ -15743,6 +15743,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15236d93c0742d646892931718fa3630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _death:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   AttackAni: {fileID: 7400000, guid: afea2c5cdce289547b71d50cbd997919, type: 3}
 --- !u!65 &456096979
 BoxCollider:
@@ -52749,11 +52754,11 @@ GameObject:
   - component: {fileID: 1583305049}
   - component: {fileID: 1583305048}
   - component: {fileID: 1583305047}
-  - component: {fileID: 1583305046}
   - component: {fileID: 1583305045}
   - component: {fileID: 1583305054}
   - component: {fileID: 1583305050}
   - component: {fileID: 1583305055}
+  - component: {fileID: 1583305046}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -52798,12 +52803,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1583305043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65631abb67631e46a3a4514199c2194, type: 3}
+  m_Script: {fileID: 11500000, guid: dad0ad5fe2415484ab8ffe6426000ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
   _normalSpeed: 40
-  _sprintSpeed: 100
+  _sprintSpeed: 60
   isSprinting: 0
 --- !u!114 &1583305047
 MonoBehaviour:
@@ -52817,6 +52822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dashStrenght: 95
+  _cooldownTime: 1
 --- !u!114 &1583305048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69529,8 +69535,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _power: 2
   _normalSpeed: 15
+  _canMove: 1
+  _movementChange: {x: 0, y: 0, z: 0}
+  rigidbody: {fileID: 0}
+  _normalSpeed: 15
   _sprintSpeed: 20
-  isSprinting: 0
+  _isSprinting: 0
 --- !u!4 &2055388380
 Transform:
   m_ObjectHideFlags: 0

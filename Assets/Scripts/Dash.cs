@@ -1,42 +1,78 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Dash : MonoBehaviour
 {
+    
+    [SerializeField] [Range(0, 500)] private float _dashStrenght = 100;//The strength of the dash.
+    [SerializeField] private float _cooldownTime = 1;//The time it takes before you can dash agein (in seconds).
+
+    private bool _iSCoolingDown;
+
     private Rigidbody _rb;
-
     private GameObject _camera;
-    private Vector3 _dash = Vector3.forward;
-    [SerializeField] [Range(0, 500)] private float _dashStrenght;
-    private Counter _timer;
 
-	private bool _keyUp = true;
+    //getters and setters
+    public float CooldownTime
+    {
+        get { return _cooldownTime; }
+        set { _cooldownTime = value; }
+    }
+    public float DashStrenght
+    {
+        get { return _dashStrenght; }
+        set { _dashStrenght = value; }
+    }
+    public bool IsCoolingDown
+    {
+        get { return _iSCoolingDown; }
+    }
 
-	// Use this for initialization
 	void Start ()
 	{
-	    _timer = new Counter(5,CounterMode.Down);
-	    _timer.SetMonobehavior(this);
-	    _timer.Start();
-	    _camera = Camera.main.gameObject;
+	    _camera = Camera.main.gameObject;//Gets the main camera.
 	    _rb = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate ()
-	{
-	    _dash = _camera.transform.forward;//transform.TransformDirection(Vector3.forward);
 
-		if (Input.GetKeyDown("e") || Input.GetAxisRaw("Dash") == 1 && _keyUp)
-		{
-	        if (_timer.CurrentTime <= 0)
-	        {
-	            _rb.AddForce(_dash*_dashStrenght,ForceMode.VelocityChange);
-	            _timer.Reset();
-	        }
+    /// <summary>
+    /// Dashes in the direction the camera is looking.
+    /// </summary>
+    public void DashToCameraViewDirection()
+    {
+        DashInDirection(_camera.transform.forward);
+    }
 
-	    }
-		_keyUp = Input.GetAxisRaw ("Dash") == 1 ? false : true;
-	}
+    /// <summary>
+    /// Dashes forward.
+    /// </summary>
+    public void DashForward()
+    {
+        DashInDirection(transform.forward);
+    }
+
+    /// <summary>
+    /// Dashes the object in a certain direction.
+    /// </summary>
+    /// <param name="direction">The direction the object will dash in.</param>
+    public void DashInDirection(Vector3 direction)
+    {
+        if (_iSCoolingDown)//Returns if the dash is in cooldown.
+            return;
+
+        _rb.AddForce(direction *_dashStrenght, ForceMode.VelocityChange);
+        _iSCoolingDown = true;
+        StartCoroutine(DashCooldown());
+    }
+
+    /// <summary>
+    /// Sets the cooldown to false after the cooldown time ends.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(_cooldownTime);
+        _iSCoolingDown = false;
+    }
+
 }
