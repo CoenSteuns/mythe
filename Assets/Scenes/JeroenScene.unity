@@ -622,7 +622,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Collider: {fileID: 0}
 --- !u!23 &444575649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4007,6 +4006,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15236d93c0742d646892931718fa3630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _death:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   AttackAni: {fileID: 7400000, guid: 2f10cbc1ef5d09c4d9d657db6e532d79, type: 3}
 --- !u!95 &849501778
 Animator:
@@ -4194,7 +4198,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b466f673fd5013f49ad711cff6ea6ced, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b466f673fd5013f49ad711cff6ea6ced, type: 3}
       propertyPath: m_LocalScale.x
@@ -4628,7 +4632,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Collider: {fileID: 0}
 --- !u!23 &1320250154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4691,7 +4694,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 43.588, z: 0}
 --- !u!1 &1327651538
 GameObject:
@@ -4923,7 +4926,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Collider: {fileID: 0}
 --- !u!23 &1358652928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4986,7 +4988,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 43.588, z: 0}
 --- !u!1 &1404045828
 GameObject:
@@ -5287,12 +5289,13 @@ GameObject:
   - component: {fileID: 1522993902}
   - component: {fileID: 1522993901}
   - component: {fileID: 1522993900}
-  - component: {fileID: 1522993899}
   - component: {fileID: 1522993898}
   - component: {fileID: 1522993896}
   - component: {fileID: 1522993904}
-  - component: {fileID: 1522993905}
   - component: {fileID: 1522993906}
+  - component: {fileID: 1522993897}
+  - component: {fileID: 1522993905}
+  - component: {fileID: 1522993899}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -5314,6 +5317,18 @@ MonoBehaviour:
   _x: 0
   _y: 1
   _speed: 10
+--- !u!114 &1522993897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522993895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82cb251b9326054b9838484ba06d2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startrunning: {fileID: 7400000, guid: df534181df26b644ebe6b248a38254dd, type: 3}
 --- !u!54 &1522993898
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5337,12 +5352,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1522993895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08042938690ff7a45915b131cd11120a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0076867b34065004d9e9d3644ae68388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpStrenght: 50
-  _minJumpStr: 50
-  _maxJump: 150
+  _power: 2
+  _normalSpeed: 40
 --- !u!23 &1522993900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5429,12 +5443,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1522993895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65631abb67631e46a3a4514199c2194, type: 3}
+  m_Script: {fileID: 11500000, guid: adb76695a6404ec41bf6b9386580d2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
-  _normalSpeed: 50
+  _normalSpeed: 40
   _sprintSpeed: 25
+  isSprinting: 0
 --- !u!114 &1522993906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5782,7 +5797,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  Collider: {fileID: 0}
 --- !u!54 &1814633969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5985,7 +5999,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7104d9a293f61d844b2c912d4bac2a5c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7104d9a293f61d844b2c912d4bac2a5c, type: 3}
       propertyPath: m_LocalScale.x
