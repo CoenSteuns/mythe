@@ -1672,6 +1672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _x: 1
   _y: 0
+  _horizontalAxis: 
+  _verticalAxis: 
   _speed: 6.39
 --- !u!1 &22611245
 GameObject:
@@ -4106,6 +4108,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112442961}
   m_Mesh: {fileID: 4300064, guid: 84c17b443122ea44ea56b1f27fb5ddae, type: 3}
+--- !u!1 &114637714 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1902791301945188, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+    type: 2}
+  m_PrefabInternal: {fileID: 1172620905}
+--- !u!114 &114637724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114637714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf79a219bb32bb4bac2fe7a5eeb8cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3.5
+  _rangeToChangeTarget: 0.1
+  _waypontObjectName: waypoints
 --- !u!1001 &117113320
 Prefab:
   m_ObjectHideFlags: 0
@@ -39156,6 +39177,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114515808131337332, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
   m_IsPrefabParent: 0
@@ -52759,6 +52785,7 @@ GameObject:
   - component: {fileID: 1583305050}
   - component: {fileID: 1583305055}
   - component: {fileID: 1583305046}
+  - component: {fileID: 1583305056}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -52807,9 +52834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
-  _normalSpeed: 40
+  _speed: 40
   _sprintSpeed: 60
-  isSprinting: 0
 --- !u!114 &1583305047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52836,6 +52862,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _x: 0
   _y: 1
+  _horizontalAxis: Right Horizontal
+  _verticalAxis: Right Vertical
   _speed: 10
 --- !u!54 &1583305049
 Rigidbody:
@@ -52858,7 +52886,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1583305043}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c82cb251b9326054b9838484ba06d2ec, type: 3}
   m_Name: 
@@ -52925,9 +52953,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06683565ea225344088fcf327a8042a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpStrenght: 50
   _normalJumpStrenght: 50
+  landEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   _maxJumpStrenght: 200
+  _chargeSpeed: 1
   _ChargeDelay: 3
 --- !u!114 &1583305055
 MonoBehaviour:
@@ -52948,6 +52981,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1583305056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1583305043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d58b16ea567bd14a818c957194896ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1583987769
 GameObject:
   m_ObjectHideFlags: 0
@@ -69533,14 +69577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65631abb67631e46a3a4514199c2194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 2
-  _normalSpeed: 15
-  _canMove: 1
-  _movementChange: {x: 0, y: 0, z: 0}
-  rigidbody: {fileID: 0}
-  _normalSpeed: 15
-  _sprintSpeed: 20
-  _isSprinting: 0
 --- !u!4 &2055388380
 Transform:
   m_ObjectHideFlags: 0
@@ -69582,6 +69618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _x: 0
   _y: 1
+  _horizontalAxis: 
+  _verticalAxis: 
   _speed: 10
 --- !u!54 &2055388384
 Rigidbody:

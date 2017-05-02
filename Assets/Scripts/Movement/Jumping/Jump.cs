@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.Events;
 
 public class Jump : MonoBehaviour
 {
     [Header("Jump")]
     [SerializeField] private float _normalJumpStrenght = 50;
+
+    public UnityEvent landEvent;
 
     protected float _jumpStrenght = 50;
     private Rigidbody _rb;
@@ -39,6 +43,7 @@ public class Jump : MonoBehaviour
         if (!IsGrounded()) { return; }//If the object is not on the ground it wont jump.
         _rb.AddForce(0, _jumpStrenght, 0, ForceMode.VelocityChange);
         ResetJumpStrength();
+        StartCoroutine(Land());
     }
 
     /// <summary>
@@ -64,6 +69,21 @@ public class Jump : MonoBehaviour
         }
         return false;
     }
-    
 
+    /// <summary>
+    /// Checks if the object has landed.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator Land()
+    {
+        while (Grounded)
+        {
+            yield return null;
+        }
+        while (!Grounded)
+        {
+            yield return null;
+        }
+        landEvent.Invoke();
+    }
 }
