@@ -5296,8 +5296,10 @@ GameObject:
   - component: {fileID: 1522993897}
   - component: {fileID: 1522993905}
   - component: {fileID: 1522993899}
+  - component: {fileID: 1522993908}
+  - component: {fileID: 1522993907}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5356,7 +5358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
-  _normalSpeed: 40
+  _speed: 40
 --- !u!23 &1522993900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5435,6 +5437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dashStrenght: 288
+  _cooldownTime: 1
 --- !u!114 &1522993905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5447,9 +5450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
-  _normalSpeed: 40
+  _speed: 40
   _sprintSpeed: 25
-  isSprinting: 0
 --- !u!114 &1522993906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5462,6 +5464,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GravityStr: -80
+--- !u!114 &1522993907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522993895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06683565ea225344088fcf327a8042a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _normalJumpStrenght: 50
+  _maxJumpStrenght: 200
+  _chargeSpeed: 1
+  _ChargeDelay: 3
+--- !u!114 &1522993908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1522993895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08042938690ff7a45915b131cd11120a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _normalJumpStrenght: 50
 --- !u!1 &1532759569
 GameObject:
   m_ObjectHideFlags: 0
