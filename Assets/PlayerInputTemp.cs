@@ -23,7 +23,13 @@ public class PlayerInputTemp : MonoBehaviour {
         MovementInput();
         JumpInput();
 	    DashInput();
+        AttackInput();
 	}
+
+    private void AttackInput()
+    {
+        
+    }
 
     private void DashInput()
     {
@@ -55,13 +61,29 @@ public class PlayerInputTemp : MonoBehaviour {
     {
         if (Input.GetAxisRaw("Jump") == 1 && !_jumpKeyDown)
         {
+
             _jumpKeyDown = true;
             _jump.StartCharge();
         }
         if (Input.GetAxisRaw("Jump") == 0 && _jumpKeyDown)
         {
+            if (_jump.JumpStrength > _jump.NormalJumpStrenght)
+            {
+                //Jump was charged
+            }
+            else
+            {
+                //jump was not charged
+            }
             _jumpKeyDown = false;
             _jump.StopCharge();
         }
     }
+    /*
+    Jump
+    Land
+    Charge
+    ChargeJump
+    Chargeland
+    */
 }

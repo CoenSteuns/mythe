@@ -10,6 +10,7 @@ public class ChargeJump : Jump{
 
     private Counter _timer;
     private bool _isCharging;
+    private bool _chargeRunning;
 
     //getters and setters
     public float MaxJumpStrenght
@@ -48,7 +49,7 @@ public class ChargeJump : Jump{
     public void StartCharge()
     {
         _timer.Start();//starts the counter.
-        _isCharging = true;
+        _chargeRunning = true;
         StartCoroutine(Charge());
     }
 
@@ -57,6 +58,7 @@ public class ChargeJump : Jump{
     /// </summary>
     public void StopCharge()
     {
+        _chargeRunning = false;
         _isCharging = false;
         _timer.Stop();
         Jumper();
@@ -69,10 +71,11 @@ public class ChargeJump : Jump{
     /// <returns></returns>
     private IEnumerator Charge()
     {
-        while (_isCharging)//If it is charging.
+        while (_chargeRunning)//If it is charging.
         {
             if(_timer.CurrentTime >= _ChargeDelay)//if the counter is more thatn the chargedelay.
             {
+                _isCharging = true;
                 _jumpStrenght += _chargeSpeed;//adds to the jumpstrength
                 _jumpStrenght = _jumpStrenght > _maxJumpStrenght ? _maxJumpStrenght : _jumpStrenght;//checks if the jumpstrength is more than the max jump strength.
             }

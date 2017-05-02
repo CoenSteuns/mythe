@@ -13,35 +13,36 @@ public class AttackBehaviour : MonoBehaviour
 
     [SerializeField] private AnimationClip AttackAni;
 
+    public bool IsAttacking
+    {
+        get { return _isAttacking; }
+    }
+
     // Use this for initialization
     void Start()
     {
         _ani = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    private void Update()
+
+    public void Attack()
     {
-        if (Input.GetMouseButtonDown(0) || Input.GetAxisRaw("Attack") == 1 && _isAttacking == false)
+        RaycastHit hit;
+        Vector3 fwdRay = transform.TransformDirection(Vector3.forward);
+        Debug.DrawRay(transform.position, fwdRay, Color.black);
+
+        if (Physics.Raycast(transform.position, fwdRay, out hit, 8))
         {
-            RaycastHit hit;
-            Vector3 fwdRay = transform.TransformDirection(Vector3.forward);
-            Debug.DrawRay(transform.position, fwdRay, Color.black);
-
-            if (Physics.Raycast(transform.position, fwdRay, out hit, 8))
+            if (hit.collider.CompareTag("Enemy"))
             {
-                if (hit.collider.CompareTag("Enemy"))
-                {
-                    _death.Invoke();
-                }
-                _ani.SetBool("Attack", true);
-                _isAttacking = true;
-                StartCoroutine(AttackTimer());
-
+                _death.Invoke();
             }
+            _ani.SetBool("Attack", true);
+            _isAttacking = true;
+            StartCoroutine(AttackTimer());
 
         }
-	}
+    }
 
         IEnumerator AttackTimer()
         {
