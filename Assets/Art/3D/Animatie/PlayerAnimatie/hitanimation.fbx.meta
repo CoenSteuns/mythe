@@ -105,7 +105,7 @@ ModelImporter:
     400096: //RootNode
     4300000: graybox_arms_donerigbestand:L_arm_mesh
     4300002: graybox_arms_donerigbestand:R_arm_mesh
-    7400000: Take 001
+    7400000: Attack
     9500000: //RootNode
     13700000: graybox_arms_donerigbestand:L_arm_mesh
     13700002: graybox_arms_donerigbestand:R_arm_mesh
@@ -131,7 +131,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Attack
       takeName: Take 001
       firstFrame: 1
       lastFrame: 30

@@ -50,48 +50,40 @@ public class PlayerInput : MonoBehaviour {
         if (Input.GetKeyDown("e") || Input.GetAxisRaw("Dash") == 1 && _dashKeyDown)
         {
             //dash
+			_ani.SetBool("Dash",true);
             _dash.DashToCameraViewDirection();
         }
         _dashKeyDown = Input.GetAxisRaw("Dash") == 1 ? false : true;
+	
     }
 
     private void MovementInput()
     {
+		_ani.SetBool ("Walking", false);
+		_ani.SetBool ("Running", false);
+		_ani.SetBool ("Dash", false);
+
+		_movement.IsSprinting = false;
         var movementInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (movementInput.magnitude > 0.2)
         {
             if (_movement.IsSprinting || Input.GetAxisRaw("Sprint") == 1)
             {
                 //sprinting
+				_ani.SetBool("StartRun",true);
                 _movement.IsSprinting = true;
+				StartCoroutine(Running());
                 print("sprinting");
             }
             else
             {
                 //walking
+				_ani.SetBool("Walking",true);
                 _movement.IsSprinting = false;
                 print("walking");
             }
         }
         _movement.SetMovement(movementInput);
-        /*var movementInput = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        if (movementInput.magnitude > 0.2 && _movement.IsSprinting || movementInput.magnitude > 0.2 && Input.GetAxisRaw("Sprint") == 1)
-        { 
-			
-			
-			_movement.IsSprinting = true;
-			_ani.SetBool ("StartRun", true);
-			StartCoroutine (Running ());
-		}
-        else
-        {
-			_movement.IsSprinting = false; 
-			_ani.SetBool ("EndRunning", true);
-			_ani.SetBool ("Running", false);
-		}
-
-
-        _movement.SetMovement(movementInput);*/
     }
 
     private void JumpInput()
@@ -107,11 +99,14 @@ public class PlayerInput : MonoBehaviour {
             if (_jump.JumpStrength > _jump.NormalJumpStrenght)
             {
                 //Jump is charged
+				_ani.SetBool("ChargeJump",true);
                 _jumpWasCharged = true;
             }
             else
             {
                 //jump is not charged
+				_ani.SetBool("Jump",true);
+				_ani.SetBool("ChargeJump",false);
                 _jumpWasCharged = false;
             }
             //_ani.SetBool ("Jump", false);
@@ -120,7 +115,8 @@ public class PlayerInput : MonoBehaviour {
         }
         if (_jump.IsCharging)
         {
-            //jump is charging
+			_ani.SetBool("Charging",true);
+
             print("Charging");
         }
     }
@@ -136,11 +132,15 @@ public class PlayerInput : MonoBehaviour {
     {
         if (_jumpWasCharged)
         {
-            //Jump was charged
+			_ani.SetBool("ChargeJumpLand",true);
+			_ani.SetBool("ChargeJump",false);
+			_ani.SetBool("Charging",false);
         }
         else
         {
             //jump was not charged
+			_ani.SetBool("JumpLand",false);
+			_ani.SetBool("Jump",false);
         }
     }
 
