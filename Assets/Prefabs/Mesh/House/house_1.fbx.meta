@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 749984a218b9c254aa8266af16c96674
+timeCreated: 1493486388
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: balk_voorkant
+    100002: balk_voorkant1
+    100004: balk_voorkant_boven
+    100006: balk_voorkant_midden
+    100008: //RootNode
+    100010: main
+    100012: main1
+    100014: paal_zijkant1
+    100016: pCube1
+    100018: pCube10
+    100020: pCube11
+    100022: pCube2
+    100024: pCube3
+    100026: pCube4
+    100028: pCube5
+    100030: pCube6
+    100032: pCube7
+    100034: pCube8
+    100036: pCube9
+    100038: pPlane1
+    100040: pPlane2
+    100042: pPlane3
+    100044: raambalk_zijkent
+    100046: raambalk_zijkent1
+    100048: trapsstuk
+    100050: voor_stuk_ramen
+    100052: windo
+    400000: balk_voorkant
+    400002: balk_voorkant1
+    400004: balk_voorkant_boven
+    400006: balk_voorkant_midden
+    400008: //RootNode
+    400010: main
+    400012: main1
+    400014: paal_zijkant1
+    400016: pCube1
+    400018: pCube10
+    400020: pCube11
+    400022: pCube2
+    400024: pCube3
+    400026: pCube4
+    400028: pCube5
+    400030: pCube6
+    400032: pCube7
+    400034: pCube8
+    400036: pCube9
+    400038: pPlane1
+    400040: pPlane2
+    400042: pPlane3
+    400044: raambalk_zijkent
+    400046: raambalk_zijkent1
+    400048: trapsstuk
+    400050: voor_stuk_ramen
+    400052: windo
+    2300000: balk_voorkant
+    2300002: balk_voorkant1
+    2300004: balk_voorkant_boven
+    2300006: balk_voorkant_midden
+    2300008: main
+    2300010: main1
+    2300012: paal_zijkant1
+    2300014: pCube1
+    2300016: pCube10
+    2300018: pCube11
+    2300020: pCube2
+    2300022: pCube3
+    2300024: pCube4
+    2300026: pCube5
+    2300028: pCube6
+    2300030: pCube7
+    2300032: pCube8
+    2300034: pCube9
+    2300036: pPlane1
+    2300038: pPlane2
+    2300040: pPlane3
+    2300042: raambalk_zijkent
+    2300044: raambalk_zijkent1
+    3300000: balk_voorkant
+    3300002: balk_voorkant1
+    3300004: balk_voorkant_boven
+    3300006: balk_voorkant_midden
+    3300008: main
+    3300010: main1
+    3300012: paal_zijkant1
+    3300014: pCube1
+    3300016: pCube10
+    3300018: pCube11
+    3300020: pCube2
+    3300022: pCube3
+    3300024: pCube4
+    3300026: pCube5
+    3300028: pCube6
+    3300030: pCube7
+    3300032: pCube8
+    3300034: pCube9
+    3300036: pPlane1
+    3300038: pPlane2
+    3300040: pPlane3
+    3300042: raambalk_zijkent
+    3300044: raambalk_zijkent1
+    4300000: main
+    4300002: paal_zijkant1
+    4300004: balk_voorkant1
+    4300006: balk_voorkant
+    4300008: raambalk_zijkent
+    4300010: raambalk_zijkent1
+    4300012: balk_voorkant_midden
+    4300014: balk_voorkant_boven
+    4300016: pCube1
+    4300018: pCube2
+    4300020: pCube3
+    4300022: pCube4
+    4300024: pCube5
+    4300026: pCube6
+    4300028: pCube7
+    4300030: pCube8
+    4300032: pPlane1
+    4300034: pPlane2
+    4300036: pCube9
+    4300038: pCube10
+    4300040: pPlane3
+    4300042: pCube11
+    4300044: main1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

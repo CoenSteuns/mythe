@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 72f07352a3679224493afd89aa9d94b3
+timeCreated: 1493815049
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: door
+    100004: group3
+    100006: main
+    100008: pCube11
+    100010: pCube11 1
+    100012: pCube11 2
+    100014: pCube11 3
+    100016: pCube11 4
+    100018: pCube32
+    100020: pCube33
+    100022: pPlane3
+    100024: pPlane3 1
+    100026: pPlane3 2
+    100028: pPlane3 3
+    100030: pPlane3 4
+    100032: pPlane4
+    100034: pPlane5
+    100036: windo
+    100038: windo1
+    100040: windo2
+    100042: windo3
+    100044: windo4
+    100046: windo5
+    100048: windo6
+    100050: windo7
+    400000: //RootNode
+    400002: door
+    400004: group3
+    400006: main
+    400008: pCube11
+    400010: pCube11 1
+    400012: pCube11 2
+    400014: pCube11 3
+    400016: pCube11 4
+    400018: pCube32
+    400020: pCube33
+    400022: pPlane3
+    400024: pPlane3 1
+    400026: pPlane3 2
+    400028: pPlane3 3
+    400030: pPlane3 4
+    400032: pPlane4
+    400034: pPlane5
+    400036: windo
+    400038: windo1
+    400040: windo2
+    400042: windo3
+    400044: windo4
+    400046: windo5
+    400048: windo6
+    400050: windo7
+    2300000: door
+    2300002: main
+    2300004: pCube11
+    2300006: pCube11 1
+    2300008: pCube11 2
+    2300010: pCube11 3
+    2300012: pCube11 4
+    2300014: pCube32
+    2300016: pCube33
+    2300018: pPlane3
+    2300020: pPlane3 1
+    2300022: pPlane3 2
+    2300024: pPlane3 3
+    2300026: pPlane3 4
+    2300028: pPlane4
+    2300030: pPlane5
+    3300000: door
+    3300002: main
+    3300004: pCube11
+    3300006: pCube11 1
+    3300008: pCube11 2
+    3300010: pCube11 3
+    3300012: pCube11 4
+    3300014: pCube32
+    3300016: pCube33
+    3300018: pPlane3
+    3300020: pPlane3 1
+    3300022: pPlane3 2
+    3300024: pPlane3 3
+    3300026: pPlane3 4
+    3300028: pPlane4
+    3300030: pPlane5
+    4300000: main
+    4300002: door
+    4300004: pCube32
+    4300006: pPlane5
+    4300008: pPlane4
+    4300010: pPlane3
+    4300012: pCube11
+    4300014: pPlane3
+    4300016: pCube11
+    4300018: pPlane3
+    4300020: pCube11
+    4300022: pPlane3
+    4300024: pCube11
+    4300026: pPlane3
+    4300028: pCube11
+    4300030: pCube33
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
