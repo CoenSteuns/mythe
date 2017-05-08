@@ -28,7 +28,7 @@ public class FollowState : PerceptionState {
     {
         base.EnterState();
         _NavMeshAgent.speed = _speed;
-        _damage.enabled = true;
+        
     }
 
     public override void InState()
@@ -56,5 +56,11 @@ public class FollowState : PerceptionState {
 
         if(_counter.CurrentTime > _timeInFollowWithoutPlayer)
         GetComponent<StateMachine>().SetState(StateID.Patroll);
+    }
+
+    private IEnumerator Damage()
+    {
+        yield return new WaitForSeconds(1.5f);
+        _damage.enabled = true;
     }
 }

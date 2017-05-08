@@ -4113,6 +4113,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1902791301945188, guid: b3bd7dc32ef3b9246a83759e307f5f57,
     type: 2}
   m_PrefabInternal: {fileID: 1172620905}
+--- !u!114 &114637720 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+    type: 2}
+  m_PrefabInternal: {fileID: 1172620905}
+  m_Script: {fileID: 11500000, guid: 046fc40f6ba13cb4584b6bbf2d72ce99, type: 3}
 --- !u!114 &114637724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18079,6 +18085,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 535006015}
+  - component: {fileID: 535006017}
+  - component: {fileID: 535006016}
   m_Layer: 0
   m_Name: charackters
   m_TagString: Untagged
@@ -18100,6 +18108,32 @@ Transform:
   m_Father: {fileID: 407107233}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535006016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535006014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8be13ec803579f40aff998ef058a115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 114637714}
+  sm: {fileID: 0}
+  _waypointObjectName: waypoints
+--- !u!114 &535006017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 535006014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111a677c4d4669245b91d71a46f655bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  e: {fileID: 114637720}
 --- !u!1 &537798750
 GameObject:
   m_ObjectHideFlags: 0
@@ -39135,6 +39169,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 535006015}
     m_Modifications:
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4603337278853384, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.32199994
@@ -39181,6 +39220,31 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: _death.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
@@ -52836,6 +52900,7 @@ MonoBehaviour:
   _power: 2
   _speed: 40
   _sprintSpeed: 60
+  _isSprinting: 0
 --- !u!114 &1583305047
 MonoBehaviour:
   m_ObjectHideFlags: 0

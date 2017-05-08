@@ -6,6 +6,8 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] private UnityEvent _death;
 
+    public UnityEvent death { get { return _death; } set { _death = value; } }
+
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +21,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
+        print("asdas");
+        death.Invoke();
     }
 }
