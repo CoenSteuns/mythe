@@ -41,6 +41,8 @@ public class PlayerInput : MonoBehaviour {
         {
             //attack
             _attack.Attack();
+			_ani.SetBool("Attack", true);  
+			StartCoroutine(_attack.AttackTimer());
 
         }
     }
@@ -78,6 +80,7 @@ public class PlayerInput : MonoBehaviour {
             else
             {
                 //walking
+				_ani.SetBool("EndRunning",true);
 				_ani.SetBool("Walking",true);
                 _movement.IsSprinting = false;
                 print("walking");
@@ -100,6 +103,7 @@ public class PlayerInput : MonoBehaviour {
             {
                 //Jump is charged
 				_ani.SetBool("ChargeJump",true);
+				_ani.SetBool("Charging",false);
                 _jumpWasCharged = true;
             }
             else
@@ -116,6 +120,7 @@ public class PlayerInput : MonoBehaviour {
         if (_jump.IsCharging)
         {
 			_ani.SetBool("Charging",true);
+			_ani.SetBool("Running",false);
 
             print("Charging");
         }

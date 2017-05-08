@@ -21,7 +21,7 @@ public class AttackBehaviour : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        _ani = GetComponent<Animator>();
+		_ani = GetComponentInChildren<Animator>();
     }
 
 
@@ -37,14 +37,13 @@ public class AttackBehaviour : MonoBehaviour
             {
                 _death.Invoke();
             }
-            _ani.SetBool("Attack", true);
             _isAttacking = true;
             StartCoroutine(AttackTimer());
 
         }
     }
 
-        IEnumerator AttackTimer()
+        public IEnumerator AttackTimer()
         {
             yield return new WaitForSeconds(AttackAni.length);
             _isAttacking = false;
