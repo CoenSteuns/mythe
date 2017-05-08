@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 2100000, guid: 0aebd19a0c5c9334db9eea748360a37d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b59c5ca280da18145ad36d2cc8c7e86b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2839,12 +2839,12 @@ MonoBehaviour:
   _mode: 1
   _direction: {x: 0, y: 0, z: 1}
   _origin: {x: 0, y: 0, z: 0}
-  _baseColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+  _baseColor: {r: 0.28965518, g: 0.0021298195, b: 0.0021298195, a: 0}
   _waveColor: {r: 0.7607844, g: 0, b: 0, a: 0.153}
   _waveAmplitude: 1
-  _waveExponent: 22
-  _waveInterval: 20
-  _waveSpeed: 10
+  _waveExponent: 15
+  _waveInterval: 50
+  _waveSpeed: 30
   _addColor: {r: 0, g: 0, b: 0, a: 1}
   shader: {fileID: 4800000, guid: 6d12e7ab487bf49d18b89038af741a18, type: 3}
 --- !u!20 &1522993909
@@ -3155,7 +3155,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c9ffe5d4c1468da499e821c6faeec500, type: 2}
+  - {fileID: 2100000, guid: 49a52f082957a9b4fba80d68652fce05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
