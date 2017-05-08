@@ -23,7 +23,6 @@ public class HandleTarget : MonoBehaviour {
     private void Respawn()
     {
         target.transform.position = _waypoints[Random.Range(0, _waypoints.Length)].position;
-        print("asdassssss");
         sm.SetState(StateID.Patroll);
     }
 }
