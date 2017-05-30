@@ -15,7 +15,7 @@ public class PlayerInput : MonoBehaviour {
 	private AnimationClip _jumpStart;
     private Dash _dash;
     private bool _dashKeyDown;
-    private AttackBehaviour _attack;
+    Attack _attack;
 
     // Use this for initialization
     void Start () {
@@ -23,10 +23,11 @@ public class PlayerInput : MonoBehaviour {
         _jump = GetComponent<ChargeJump>();
 		_ani = GetComponentInChildren<Animator>();
         _dash = GetComponent<Dash>();
-        _attack = GetComponentInChildren<AttackBehaviour>();
+        _attack = GetComponentInChildren<Attack>();
         _jump.landEvent.AddListener(Land);
+
     }
-	
+
 	// Update is called once per frame
 	void Update () {
         MovementInput();
@@ -37,12 +38,11 @@ public class PlayerInput : MonoBehaviour {
 
     private void AttackInput()
     {
-        if (Input.GetMouseButtonDown(0) || Input.GetAxisRaw("Attack") == 1 && _attack.IsAttacking == false)
+        if (Input.GetMouseButtonDown(0) || Input.GetAxisRaw("Attack") == 1)
         {
             //attack
-            _attack.Attack();
-			_ani.SetBool("Attack", true);  
-			StartCoroutine(_attack.AttackTimer());
+            _attack.AttackTargets();
+			_ani.SetBool("Attack", true);
 
         }
     }
@@ -56,7 +56,7 @@ public class PlayerInput : MonoBehaviour {
             _dash.DashToCameraViewDirection();
         }
         _dashKeyDown = Input.GetAxisRaw("Dash") == 1 ? false : true;
-	
+
     }
 
     private void MovementInput()
@@ -93,7 +93,6 @@ public class PlayerInput : MonoBehaviour {
     {
         if (Input.GetAxisRaw("Jump") == 1 && !_jumpKeyDown)
         {
-		    	
             _jumpKeyDown = true;
             _jump.StartCharge();
         }
@@ -130,7 +129,7 @@ public class PlayerInput : MonoBehaviour {
 	IEnumerator Running(){
 		yield return new WaitForSeconds (_startrunning.length);
 		_ani.SetBool ("StartRun", false);
-		_ani.SetBool ("Running", true);	
+		_ani.SetBool ("Running", true);
 	}
 
     void Land()

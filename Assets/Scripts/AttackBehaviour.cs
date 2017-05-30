@@ -18,7 +18,6 @@ public class AttackBehaviour : MonoBehaviour
         get { return _isAttacking; }
     }
 
-    // Use this for initialization
     void Start()
     {
 		_ani = GetComponentInChildren<Animator>();
@@ -49,5 +48,5 @@ public class AttackBehaviour : MonoBehaviour
             _isAttacking = false;
             _ani.SetBool("Attack", false);
         }
-    
+
 }
