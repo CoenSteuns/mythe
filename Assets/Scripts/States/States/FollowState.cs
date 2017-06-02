@@ -14,21 +14,21 @@ public class FollowState : PerceptionState {
     private NavMeshAgent _NavMeshAgent;
     private GameObject _player;
     private Counter _counter;
-    private SphereCollider _damage;
+    private Attack _damage;
 
     void Start()
     {
         _counter = new Counter();
         _player = GameObject.Find(_playerName);
         _NavMeshAgent = GetComponent<NavMeshAgent>();
-        _damage = GetComponentInChildren<SphereCollider>();
+        _damage = GetComponentInChildren<Attack>();
     }
 
     public override void EnterState()
     {
         base.EnterState();
         _NavMeshAgent.speed = _speed;
-        
+        _damage.ConstantAttackMultiple();
     }
 
     public override void InState()
@@ -39,7 +39,7 @@ public class FollowState : PerceptionState {
     public override void LeaveState()
     {
         base.LeaveState();
-        _damage.enabled = false;
+        _damage.StopConstantAttack();
     }
 
     public override void CheckState()

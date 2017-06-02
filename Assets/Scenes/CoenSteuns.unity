@@ -17808,6 +17808,7 @@ GameObject:
   - component: {fileID: 510657718}
   - component: {fileID: 510657703}
   - component: {fileID: 510657720}
+  - component: {fileID: 510657721}
   m_Layer: 0
   m_Name: Player
   m_TagString: player
@@ -18089,12 +18090,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 510657702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dff48c0ca1a04c844940becbfd4378bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2074220db4d26184488b65f0bb006622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackName: 
   _targeter: {fileID: 510657718}
   _action: {fileID: 510657703}
-  isConstanlyAttacking: 0
 --- !u!114 &510657720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18111,9 +18112,31 @@ MonoBehaviour:
   _minHealth: 0
   _deathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 510657721}
+        m_MethodName: log
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &510657721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 510657702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90a6aac602e41646894f10e4dd12733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &512830342
 GameObject:
   m_ObjectHideFlags: 0
@@ -40442,8 +40465,58 @@ Prefab:
       propertyPath: _ifContains
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 6.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524013495306238, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_SpotAngle
+      value: 101.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.38823533
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.18823531
+      objectReference: {fileID: 0}
+    - target: {fileID: 108353761772846602, guid: b3bd7dc32ef3b9246a83759e307f5f57,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.18823531
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524013495306238, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524013495306238, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114888567673912724, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+    - {fileID: 135631257979935738, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+    - {fileID: 114599092499437854, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
+    - {fileID: 114092665823160032, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b3bd7dc32ef3b9246a83759e307f5f57, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1172620906 stripped
@@ -40462,7 +40535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11e131546a5acf429040c20cf593c1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _range: 0
+  _range: 10.6
+  _drawGizmos: 1
 --- !u!114 &1172620908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40475,9 +40549,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _acceptedColliders:
-  - Player
+  - player
   _canAttackMultipleEnemies: 1
-  damage: 0
+  damage: 20
   perSecond: 1
 --- !u!114 &1172620909
 MonoBehaviour:
@@ -40487,12 +40561,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1172620906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dff48c0ca1a04c844940becbfd4378bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2074220db4d26184488b65f0bb006622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackName: Light
   _targeter: {fileID: 1172620907}
   _action: {fileID: 1172620908}
-  isConstanlyAttacking: 0
 --- !u!1 &1176077827
 GameObject:
   m_ObjectHideFlags: 0

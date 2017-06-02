@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : MonoBehaviour {
+public class Attack : MonoBehaviour
+{
+    [Header("name")]
+    [SerializeField] private string _attackName;
 
+    [Header("Attack")]
     [SerializeField] private AttackTargeter _targeter;
     [SerializeField] private AttackAction _action;
 
-    public bool isConstanlyAttacking;
+    private bool isConstanlyAttacking;
+
+    public AttackTargeter Targeter { get { return _targeter; } }
+    public AttackAction Action { get { return _action; } }
 
     public void AttackTargets()
     {
@@ -20,11 +27,13 @@ public class Attack : MonoBehaviour {
 
     public void ConstantAttack()
     {
+        isConstanlyAttacking = true;
         StartCoroutine(Constant());
     }
 
     public void ConstantAttackMultiple()
     {
+        isConstanlyAttacking = true;
         StartCoroutine(ConstantMult());
     }
 

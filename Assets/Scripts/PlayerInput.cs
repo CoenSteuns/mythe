@@ -83,7 +83,7 @@ public class PlayerInput : MonoBehaviour {
 				_ani.SetBool("EndRunning",true);
 				_ani.SetBool("Walking",true);
                 _movement.IsSprinting = false;
-                print("walking");
+
             }
         }
         _movement.SetMovement(movementInput);

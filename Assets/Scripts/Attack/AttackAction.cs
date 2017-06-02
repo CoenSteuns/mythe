@@ -23,6 +23,7 @@ public abstract class AttackAction : MonoBehaviour {
 
     private void AttackCheck(Collider col)
     {
+
         if (col == null)
             return;
         if (_acceptedColliders.Length < 1)
@@ -30,9 +31,9 @@ public abstract class AttackAction : MonoBehaviour {
             OnAttack(col);
             return;
         }
-
         for (int i = 0; i < _acceptedColliders.Length; i++)
         {
+
             if (col.CompareTag(_acceptedColliders[i]))
             {
                 OnAttack(col);
