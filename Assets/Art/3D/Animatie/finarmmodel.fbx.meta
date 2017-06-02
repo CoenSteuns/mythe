@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 4b65eca67baeec7469bc34896c7b3d62
+timeCreated: 1496386447
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: graybox_arms_donerigbestand:dont_touch
+    100004: graybox_arms_donerigbestand:group3
+    100006: graybox_arms_donerigbestand:group7
+    100008: graybox_arms_donerigbestand:group9
+    100010: graybox_arms_donerigbestand:L_base_index
+    100012: graybox_arms_donerigbestand:L_base_mid
+    100014: graybox_arms_donerigbestand:L_base_thumb
+    100016: graybox_arms_donerigbestand:L_elbow
+    100018: graybox_arms_donerigbestand:L_index_joint_1
+    100020: graybox_arms_donerigbestand:L_index_joint_2
+    100022: graybox_arms_donerigbestand:L_index_joint_3
+    100024: graybox_arms_donerigbestand:L_mid_1
+    100026: graybox_arms_donerigbestand:L_mid_2
+    100028: graybox_arms_donerigbestand:L_mid_3
+    100030: graybox_arms_donerigbestand:L_new_hand
+    100032: graybox_arms_donerigbestand:L_nieuwer_hand
+    100034: graybox_arms_donerigbestand:L_pink_1
+    100036: graybox_arms_donerigbestand:L_pink_2
+    100038: graybox_arms_donerigbestand:L_pink_3
+    100040: graybox_arms_donerigbestand:L_pink_base
+    100042: graybox_arms_donerigbestand:L_polse
+    100044: graybox_arms_donerigbestand:L_ring_1
+    100046: graybox_arms_donerigbestand:L_ring_2
+    100048: graybox_arms_donerigbestand:L_ring_3
+    100050: graybox_arms_donerigbestand:L_ring_base
+    100052: graybox_arms_donerigbestand:L_shoulder
+    100054: graybox_arms_donerigbestand:L_thumb_joint_1
+    100056: graybox_arms_donerigbestand:L_thumb_joint_2
+    100058: graybox_arms_donerigbestand:main_circle
+    100060: graybox_arms_donerigbestand:R_base_index
+    100062: graybox_arms_donerigbestand:R_base_mid
+    100064: graybox_arms_donerigbestand:R_base_thumb
+    100066: graybox_arms_donerigbestand:R_elbow
+    100068: graybox_arms_donerigbestand:R_index_joint_1
+    100070: graybox_arms_donerigbestand:R_index_joint_2
+    100072: graybox_arms_donerigbestand:R_index_joint_3
+    100074: graybox_arms_donerigbestand:R_mid_1
+    100076: graybox_arms_donerigbestand:R_mid_2
+    100078: graybox_arms_donerigbestand:R_mid_3
+    100080: graybox_arms_donerigbestand:R_pink_1
+    100082: graybox_arms_donerigbestand:R_pink_2
+    100084: graybox_arms_donerigbestand:R_pink_3
+    100086: graybox_arms_donerigbestand:R_pink_base
+    100088: graybox_arms_donerigbestand:R_polse
+    100090: graybox_arms_donerigbestand:R_ring_1
+    100092: graybox_arms_donerigbestand:R_ring_2
+    100094: graybox_arms_donerigbestand:R_ring_3
+    100096: graybox_arms_donerigbestand:R_ring_base
+    100098: graybox_arms_donerigbestand:R_shoulder
+    100100: graybox_arms_donerigbestand:R_thumb_joint_1
+    100102: graybox_arms_donerigbestand:R_thumb_joint_2
+    400000: //RootNode
+    400002: graybox_arms_donerigbestand:dont_touch
+    400004: graybox_arms_donerigbestand:group3
+    400006: graybox_arms_donerigbestand:group7
+    400008: graybox_arms_donerigbestand:group9
+    400010: graybox_arms_donerigbestand:L_base_index
+    400012: graybox_arms_donerigbestand:L_base_mid
+    400014: graybox_arms_donerigbestand:L_base_thumb
+    400016: graybox_arms_donerigbestand:L_elbow
+    400018: graybox_arms_donerigbestand:L_index_joint_1
+    400020: graybox_arms_donerigbestand:L_index_joint_2
+    400022: graybox_arms_donerigbestand:L_index_joint_3
+    400024: graybox_arms_donerigbestand:L_mid_1
+    400026: graybox_arms_donerigbestand:L_mid_2
+    400028: graybox_arms_donerigbestand:L_mid_3
+    400030: graybox_arms_donerigbestand:L_new_hand
+    400032: graybox_arms_donerigbestand:L_nieuwer_hand
+    400034: graybox_arms_donerigbestand:L_pink_1
+    400036: graybox_arms_donerigbestand:L_pink_2
+    400038: graybox_arms_donerigbestand:L_pink_3
+    400040: graybox_arms_donerigbestand:L_pink_base
+    400042: graybox_arms_donerigbestand:L_polse
+    400044: graybox_arms_donerigbestand:L_ring_1
+    400046: graybox_arms_donerigbestand:L_ring_2
+    400048: graybox_arms_donerigbestand:L_ring_3
+    400050: graybox_arms_donerigbestand:L_ring_base
+    400052: graybox_arms_donerigbestand:L_shoulder
+    400054: graybox_arms_donerigbestand:L_thumb_joint_1
+    400056: graybox_arms_donerigbestand:L_thumb_joint_2
+    400058: graybox_arms_donerigbestand:main_circle
+    400060: graybox_arms_donerigbestand:R_base_index
+    400062: graybox_arms_donerigbestand:R_base_mid
+    400064: graybox_arms_donerigbestand:R_base_thumb
+    400066: graybox_arms_donerigbestand:R_elbow
+    400068: graybox_arms_donerigbestand:R_index_joint_1
+    400070: graybox_arms_donerigbestand:R_index_joint_2
+    400072: graybox_arms_donerigbestand:R_index_joint_3
+    400074: graybox_arms_donerigbestand:R_mid_1
+    400076: graybox_arms_donerigbestand:R_mid_2
+    400078: graybox_arms_donerigbestand:R_mid_3
+    400080: graybox_arms_donerigbestand:R_pink_1
+    400082: graybox_arms_donerigbestand:R_pink_2
+    400084: graybox_arms_donerigbestand:R_pink_3
+    400086: graybox_arms_donerigbestand:R_pink_base
+    400088: graybox_arms_donerigbestand:R_polse
+    400090: graybox_arms_donerigbestand:R_ring_1
+    400092: graybox_arms_donerigbestand:R_ring_2
+    400094: graybox_arms_donerigbestand:R_ring_3
+    400096: graybox_arms_donerigbestand:R_ring_base
+    400098: graybox_arms_donerigbestand:R_shoulder
+    400100: graybox_arms_donerigbestand:R_thumb_joint_1
+    400102: graybox_arms_donerigbestand:R_thumb_joint_2
+    4300000: graybox_arms_donerigbestand:L_new_hand
+    4300002: graybox_arms_donerigbestand:L_nieuwer_hand
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: graybox_arms_donerigbestand:L_new_hand
+    13700002: graybox_arms_donerigbestand:L_nieuwer_hand
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6556,3 +6556,9 @@ walking
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInput.AttackInput () [0x00000] in <filename unknown>:0 
+  at PlayerInput.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
