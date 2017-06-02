@@ -592,13 +592,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06683565ea225344088fcf327a8042a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _normalJumpStrenght: 10
+  _normalJumpStrenght: 5
   landEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  _maxJumpStrenght: 60
+  _maxJumpStrenght: 40
   _chargeSpeed: 3
   _ChargeDelay: 0.5
 --- !u!114 &1300918046
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _power: 2
-  _speed: 20
+  _speed: 10
 --- !u!114 &1300918047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,9 +625,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb76695a6404ec41bf6b9386580d2d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 2
-  _speed: 20
-  _sprintSpeed: 40
+  _power: 1
+  _speed: 10
+  _sprintSpeed: 25
   _isSprinting: 0
 --- !u!114 &1300918048
 MonoBehaviour:
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc8451e5a69cfe147a4cc5ad1c1d73c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GravityStr: -80
+  GravityStr: -50
 --- !u!114 &1300918050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,8 +756,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1300918041}
   m_LocalRotation: {x: 0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 72.4, y: -16.72, z: -57.2}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 72.4, y: -31.97, z: -57.2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 47267755}
   - {fileID: 155437965}
@@ -821,15 +821,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff87f46c4b1dc9644a68f434b1d770e1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff87f46c4b1dc9644a68f434b1d770e1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ff87f46c4b1dc9644a68f434b1d770e1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ff87f46c4b1dc9644a68f434b1d770e1, type: 3}
@@ -1092,6 +1092,18 @@ Prefab:
     - target: {fileID: 1217870456801672, guid: f42b1a9c3962ec0458b399cb6aecdd96, type: 2}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867329989826734, guid: f42b1a9c3962ec0458b399cb6aecdd96, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867329989826734, guid: f42b1a9c3962ec0458b399cb6aecdd96, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867329989826734, guid: f42b1a9c3962ec0458b399cb6aecdd96, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f42b1a9c3962ec0458b399cb6aecdd96, type: 2}
