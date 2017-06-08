@@ -2,38 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameOverTimer : MonoBehaviour {
 
-    [SerializeField] private float _time = 10;
 
-    private Counter _timer;
-    [SerializeField] private GameOver _gameOver;
-    private Text _text;
+    [SerializeField]
+    private float startTime;
+    [SerializeField] private float _time = 60;
+    [SerializeField] private Text _text;
+    [SerializeField]
+    UnityEvent TimerZero;
 
-	// Use this for initialization
-	void Start () {
+    private Coroutine _coro;
 
-        _text = GetComponent<Text>();
+    private bool _isCounting;
 
-        _timer = new Counter(_time, CounterMode.Down, 0.1f);
-        _timer.refreshEvent.AddListener(CheckGameOver);
-        _timer.Start();
-	}
-
-    public void ResetTimer()
+    private void Start()
     {
-        _timer.Reset();
+        _text = GetComponent<Text>();
+        
     }
 
-    private void CheckGameOver()
+    public void StartTimer()
     {
-        float time = (Mathf.Round(_timer.CurrentTime * 10)) / 10;
-        _text.text = time.ToString() ;
-        if(_timer.CurrentTime <= 0)
+        print("sta");
+        _time = startTime;
+        _isCounting = true;
+        _coro = StartCoroutine(counter());
+    }
+
+    public void StopTimer()
+    {
+        StopCoroutine(_coro);
+        _isCounting = false;
+    }
+
+    private void SetTextTime()
+    {
+        GetComponent<Text>().text = "Time left: " + _time;
+    }
+
+    public IEnumerator counter()
+    {
+        while (_isCounting)
         {
-            _gameOver.Gameover();
-            _text.text = "0.0";
+            _time -= 1;
+            SetTextTime();
+            yield return new WaitForSeconds(1);
+            if(_time < 1)
+            {
+                _isCounting = false;
+                TimerZero.Invoke();
+            }
         }
     }
+
 }

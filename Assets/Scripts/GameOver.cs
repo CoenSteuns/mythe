@@ -2,37 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-    public GameObject gameover;
-    public float respawnTime;
+    [SerializeField]
+    private Score _score;
 
-    public Transform spawn;
-    public GameObject player;
+    [SerializeField]
+    Text _scoreField;
 
-    public UnityEvent e;
-
-    private void Start()
-    {
-        gameover.SetActive(false);
-        player.transform.position = spawn.position;
+    public void Over() {
+        _scoreField.text = "Score: " + _score.score;
     }
 
-    public void Gameover()
-    {
-        Time.timeScale = 0;
-        gameover.SetActive(true);
-        StartCoroutine(Restart());
-    }
-
-
-    private IEnumerator Restart()
-    {
-        yield return new WaitForSecondsRealtime(respawnTime);
-        Time.timeScale = 1;
-        gameover.SetActive(false);
-        player.transform.position = spawn.position;
-        e.Invoke();
-    }
 }

@@ -11,6 +11,8 @@ public class FollowState : PerceptionState {
     [SerializeField] private string _playerName = "Player";
     [SerializeField] private float _timeInFollowWithoutPlayer = 3;
 
+    [SerializeField] private Light _light;
+
     private NavMeshAgent _NavMeshAgent;
     private GameObject _player;
     private Counter _counter;
@@ -27,7 +29,7 @@ public class FollowState : PerceptionState {
     public override void EnterState()
     {
         base.EnterState();
-        print("sssdsss");
+        _light.enabled = true;
         _NavMeshAgent.speed = _speed;
         _damage.ConstantAttackMultiple();
     }
@@ -40,6 +42,7 @@ public class FollowState : PerceptionState {
     public override void LeaveState()
     {
         base.LeaveState();
+        _light.enabled = false;
         _damage.StopConstantAttack();
     }
 

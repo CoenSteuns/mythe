@@ -75,7 +75,7 @@ public class PlayerInput : MonoBehaviour {
 				_ani.SetBool("StartRun",true);
                 _movement.IsSprinting = true;
 				StartCoroutine(Running());
-                print("sprinting");
+
             }
             else
             {
@@ -121,7 +121,7 @@ public class PlayerInput : MonoBehaviour {
 			_ani.SetBool("Charging",true);
 			_ani.SetBool("Running",false);
 
-            print("Charging");
+
         }
     }
 

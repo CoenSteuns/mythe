@@ -40,7 +40,7 @@ public class PatrollState : PerceptionState {
         if (_navMeshAgent.remainingDistance > _rangeToChangeTarget)
             return;
 
-        print("istate");
+
         setNewTarget();
     }
 
