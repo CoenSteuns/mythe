@@ -10,8 +10,9 @@ public class DamageAttack : AttackAction {
 
     protected override void OnAttack(Collider col)
     {
+        print(col.gameObject);
         var dam = perSecond ? damage * Time.deltaTime : damage;
-        col.gameObject.GetComponent<Health>().SubtractHealth(dam);
+        col.gameObject.GetComponent<HealthHandler>().SubtractHealth(dam);
     }
 
 

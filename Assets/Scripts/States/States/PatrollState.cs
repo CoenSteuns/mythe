@@ -32,6 +32,7 @@ public class PatrollState : PerceptionState {
             _navMeshAgent = GetComponent<NavMeshAgent>();
         }
         _navMeshAgent.speed = _speed;
+        setNewTarget();
     }
 
     public override void InState()
@@ -39,6 +40,7 @@ public class PatrollState : PerceptionState {
         if (_navMeshAgent.remainingDistance > _rangeToChangeTarget)
             return;
 
+        print("istate");
         setNewTarget();
     }
 
@@ -52,6 +54,7 @@ public class PatrollState : PerceptionState {
 
     private void setNewTarget()
     {
-        _navMeshAgent.SetDestination(_waypoints[Random.Range(0, _waypoints.Length)].position);
+        var num = Random.Range(0, _waypoints.Length);
+        _navMeshAgent.SetDestination(_waypoints[num].position);
     }
 }

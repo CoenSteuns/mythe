@@ -27,6 +27,7 @@ public class FollowState : PerceptionState {
     public override void EnterState()
     {
         base.EnterState();
+        print("sssdsss");
         _NavMeshAgent.speed = _speed;
         _damage.ConstantAttackMultiple();
     }

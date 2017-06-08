@@ -26,10 +26,10 @@ public class PatrollWithWaypoints : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = _speed;
     }
-	
+
 	// Update is called once per frame
 	void Update () {
-        
+
     }
 
     public void StartPatrolling()
@@ -45,7 +45,9 @@ public class PatrollWithWaypoints : MonoBehaviour
 
     private void SetNewTarget()
     {
-        _navMeshAgent.SetDestination(_waypoints[Random.Range(0, _waypoints.Length)].position);
+        var num = Random.Range(0, _waypoints.Length);
+        print(num);
+        _navMeshAgent.SetDestination(_waypoints[num].position);
     }
 
     private IEnumerator Patrol()
@@ -55,7 +57,7 @@ public class PatrollWithWaypoints : MonoBehaviour
             if (!(_navMeshAgent.remainingDistance > _rangeToChangeTarget))
                 SetNewTarget();
 
-            
+
             yield return null;
         }
     }

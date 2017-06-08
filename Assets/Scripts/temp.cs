@@ -6,6 +6,6 @@ public class temp : MonoBehaviour {
 
     public void Kill()
     {
-        Destroy(this.gameObject);
+        print("die");
     }
 }
